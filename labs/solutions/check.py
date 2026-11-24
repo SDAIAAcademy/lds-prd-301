@@ -89,11 +89,12 @@ def main():
     reach = [ln for ln in out.splitlines() if ln.startswith("reach")]
     print("     " + reach[0] if reach else "     no reach line")
     rc, out = run("oversight_sim.py", REF / "oversight_reference.json", F / "capstone" / "pilot2_cases.csv", F / "capstone" / "pilot2_workload.csv")
-    ok("capacity PASS" in out and "CW09: weeks 1, 2" in out, "capstone: the reference spec flags CW09 in weeks 1 and 2 of pilot 2")
+    ok("capacity PASS, reach PASS, triggers PASS, log_fields PASS, segregation_of_duties PASS" in out and "CW09: weeks 1, 2" in out and "9.2 h" in out and "false alarms: 0 of 46" in out, "capstone: the reference spec passes on pilot 2, top week 9.2 h, flags CW09 in weeks 1 and 2, no false alarm")
 
     # capstone
-    rc, out = run("slices.py", F / "capstone" / "pilot2_cases.csv", "--by", "channel,doc_lang,age_band")
+    rc, out = run("slices.py", F / "capstone" / "pilot2_cases.csv", "--by", "channel,doc_lang,age_band,doc_form")
     ok("5/23  21.7% FAIL" in out and "0/15 too few" in out, "capstone pilot-2 audit: relative channel 21.7%, English too few for false not eligible")
+    ok("1/29   3.4% ok" in out and "2/22   9.1% FAIL" in out and "5/64   7.8% FAIL" in out, "capstone inject cards: 60+ 3.4% ok, English false incomplete 9.1%, 18-39 7.8%")
     print(f"\n{'all checks passed' if not fails else str(fails) + ' check(s) failed'}")
     return 1 if fails else 0
 

@@ -22,6 +22,7 @@
 uv run labs/_tools/generate.py      # يعيد كتابة البيانات وملفات المرجع (النتيجة نفسها في كل مرة)
 uv run labs/_tools/build_pages.py   # يعيد كتابة الصفحات في files/ من البيانات
 uv run labs/_tools/examples.py      # أرقام مثال إعانة الإيجار في الشرائح
+uv run labs/_tools/bank_stats.py    # مواضع المفاتيح وأطوالها في أسئلة التدريب ونقاط التحقق
 uv run labs/solutions/check.py      # يشغّل كل أداة على ملف البداية وعلى الحل ويتحقق من الأرقام
 ```
 
