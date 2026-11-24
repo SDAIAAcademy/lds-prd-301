@@ -21,7 +21,7 @@ h1{font-size:1.4rem;line-height:1.5;margin:.8rem 0}h2{font-size:1.12rem;margin:1
 .card{border:1px solid #cfd8dc;border-radius:.4rem;padding:.6rem .9rem;margin:.8rem 0;background:#fff}
 .note{border-inline-start:4px solid #c9a227;padding:.3rem .8rem;background:#fff8e1;margin:.8rem 0}
 .scroll{overflow-x:auto;max-width:100%}table{border-collapse:collapse;width:100%;font-size:.93rem}td,th{border:1px solid #cfd8dc;padding:.35rem .5rem;text-align:start;vertical-align:top}th{background:#eef2f4}
-.ltr{direction:ltr;unicode-bidi:isolate;display:inline-block}
+.ltr{direction:ltr;unicode-bidi:isolate;display:inline-block;max-width:100%;overflow-wrap:anywhere}
 .en{direction:ltr;text-align:left;unicode-bidi:isolate}
 ol.q li{margin-bottom:.6rem}ol.opts{list-style:upper-latin;margin:.2rem 0}
 @media (max-width:560px){table{font-size:.82rem}td,th{padding:.25rem .3rem}}"""
