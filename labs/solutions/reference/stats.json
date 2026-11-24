@@ -1,0 +1,1014 @@
+{
+  "pilot1": {
+    "cases": 1440,
+    "draft_errors": 112,
+    "draft_errors_caught": 44,
+    "final_wrong": 79,
+    "wrongful_denials": 54,
+    "wrongful_denials_appealed": 5,
+    "appeals": 22,
+    "appeals_overturned": 4,
+    "overrides": 55,
+    "overrides_blank_reason": 33,
+    "agreement_overall": 0.962,
+    "by_week": {
+      "1": {
+        "agreement": 0.956,
+        "median_review_seconds": 178,
+        "draft_errors": 12,
+        "draft_errors_caught": 7
+      },
+      "2": {
+        "agreement": 0.933,
+        "median_review_seconds": 179,
+        "draft_errors": 15,
+        "draft_errors_caught": 10
+      },
+      "3": {
+        "agreement": 0.961,
+        "median_review_seconds": 152,
+        "draft_errors": 13,
+        "draft_errors_caught": 6
+      },
+      "4": {
+        "agreement": 0.967,
+        "median_review_seconds": 142,
+        "draft_errors": 13,
+        "draft_errors_caught": 6
+      },
+      "5": {
+        "agreement": 0.939,
+        "median_review_seconds": 107,
+        "draft_errors": 21,
+        "draft_errors_caught": 9
+      },
+      "6": {
+        "agreement": 0.972,
+        "median_review_seconds": 108,
+        "draft_errors": 19,
+        "draft_errors_caught": 4
+      },
+      "7": {
+        "agreement": 0.989,
+        "median_review_seconds": 89,
+        "draft_errors": 8,
+        "draft_errors_caught": 1
+      },
+      "8": {
+        "agreement": 0.978,
+        "median_review_seconds": 67,
+        "draft_errors": 11,
+        "draft_errors_caught": 1
+      }
+    },
+    "by_doc_form": {
+      "handwritten": {
+        "n": 353,
+        "eligible_n": 209,
+        "false_not_eligible": 0.0622,
+        "false_incomplete": 0.0164
+      },
+      "photo": {
+        "n": 311,
+        "eligible_n": 184,
+        "false_not_eligible": 0.0707,
+        "false_incomplete": 0.0179
+      },
+      "typed": {
+        "n": 776,
+        "eligible_n": 460,
+        "false_not_eligible": 0.013,
+        "false_incomplete": 0.0347
+      }
+    },
+    "by_doc_lang": {
+      "ar": {
+        "n": 1172,
+        "eligible_n": 700,
+        "false_not_eligible": 0.04,
+        "false_incomplete": 0.0173
+      },
+      "en": {
+        "n": 147,
+        "eligible_n": 86,
+        "false_not_eligible": 0.0116,
+        "false_incomplete": 0.0703
+      },
+      "mixed": {
+        "n": 121,
+        "eligible_n": 67,
+        "false_not_eligible": 0.0448,
+        "false_incomplete": 0.0648
+      }
+    },
+    "by_age_band": {
+      "18-39": {
+        "n": 520,
+        "eligible_n": 280,
+        "false_not_eligible": 0.0357,
+        "false_incomplete": 0.0264
+      },
+      "40-59": {
+        "n": 554,
+        "eligible_n": 343,
+        "false_not_eligible": 0.035,
+        "false_incomplete": 0.0282
+      },
+      "60+": {
+        "n": 366,
+        "eligible_n": 230,
+        "false_not_eligible": 0.0435,
+        "false_incomplete": 0.0246
+      }
+    },
+    "by_channel": {
+      "counter": {
+        "n": 776,
+        "eligible_n": 446,
+        "false_not_eligible": 0.0359,
+        "false_incomplete": 0.0278
+      },
+      "relative": {
+        "n": 220,
+        "eligible_n": 139,
+        "false_not_eligible": 0.0288,
+        "false_incomplete": 0.0158
+      },
+      "web": {
+        "n": 444,
+        "eligible_n": 268,
+        "false_not_eligible": 0.0448,
+        "false_incomplete": 0.0299
+      }
+    },
+    "by_district": {
+      "D1": {
+        "n": 349,
+        "eligible_n": 199,
+        "false_not_eligible": 0.0251,
+        "false_incomplete": 0.0284
+      },
+      "D2": {
+        "n": 321,
+        "eligible_n": 189,
+        "false_not_eligible": 0.0582,
+        "false_incomplete": 0.0175
+      },
+      "D3": {
+        "n": 273,
+        "eligible_n": 171,
+        "false_not_eligible": 0.0643,
+        "false_incomplete": 0.0208
+      },
+      "D4": {
+        "n": 285,
+        "eligible_n": 160,
+        "false_not_eligible": 0.0125,
+        "false_incomplete": 0.0369
+      },
+      "D5": {
+        "n": 212,
+        "eligible_n": 134,
+        "false_not_eligible": 0.0224,
+        "false_incomplete": 0.0317
+      }
+    },
+    "draft_by_doc_form": {
+      "handwritten": {
+        "n": 353,
+        "eligible_n": 209,
+        "false_not_eligible": 0.1053,
+        "false_incomplete": 0.0361
+      },
+      "photo": {
+        "n": 311,
+        "eligible_n": 184,
+        "false_not_eligible": 0.0978,
+        "false_incomplete": 0.0287
+      },
+      "typed": {
+        "n": 776,
+        "eligible_n": 460,
+        "false_not_eligible": 0.0152,
+        "false_incomplete": 0.0376
+      }
+    },
+    "draft_by_doc_lang": {
+      "ar": {
+        "n": 1172,
+        "eligible_n": 700,
+        "false_not_eligible": 0.06,
+        "false_incomplete": 0.0154
+      },
+      "en": {
+        "n": 147,
+        "eligible_n": 86,
+        "false_not_eligible": 0.0233,
+        "false_incomplete": 0.1172
+      },
+      "mixed": {
+        "n": 121,
+        "eligible_n": 67,
+        "false_not_eligible": 0.0448,
+        "false_incomplete": 0.1296
+      }
+    },
+    "draft_by_channel": {
+      "counter": {
+        "n": 776,
+        "eligible_n": 446,
+        "false_not_eligible": 0.0538,
+        "false_incomplete": 0.0365
+      },
+      "relative": {
+        "n": 220,
+        "eligible_n": 139,
+        "false_not_eligible": 0.0647,
+        "false_incomplete": 0.0211
+      },
+      "web": {
+        "n": 444,
+        "eligible_n": 268,
+        "false_not_eligible": 0.0522,
+        "false_incomplete": 0.0399
+      }
+    },
+    "draft_by_age_band": {
+      "18-39": {
+        "n": 520,
+        "eligible_n": 280,
+        "false_not_eligible": 0.05,
+        "false_incomplete": 0.0374
+      },
+      "40-59": {
+        "n": 554,
+        "eligible_n": 343,
+        "false_not_eligible": 0.0466,
+        "false_incomplete": 0.0343
+      },
+      "60+": {
+        "n": 366,
+        "eligible_n": 230,
+        "false_not_eligible": 0.0739,
+        "false_incomplete": 0.0338
+      }
+    },
+    "lazy_caseworkers": {
+      "CW04": {
+        "overrides": 0,
+        "median_review_seconds": 34
+      },
+      "CW09": {
+        "overrides": 0,
+        "median_review_seconds": 33
+      }
+    }
+  },
+  "pilot1_audit": {
+    "cases": 392,
+    "draft_errors": 25,
+    "draft_errors_caught": 10,
+    "final_wrong": 20,
+    "wrongful_denials": 15,
+    "wrongful_denials_appealed": 3,
+    "appeals": 8,
+    "appeals_overturned": 2,
+    "overrides": 15,
+    "overrides_blank_reason": 10,
+    "agreement_overall": 0.962,
+    "by_week": {
+      "1": {
+        "agreement": 0.938,
+        "median_review_seconds": 201,
+        "draft_errors": 5,
+        "draft_errors_caught": 2
+      },
+      "2": {
+        "agreement": 0.936,
+        "median_review_seconds": 178,
+        "draft_errors": 3,
+        "draft_errors_caught": 2
+      },
+      "3": {
+        "agreement": 0.964,
+        "median_review_seconds": 143,
+        "draft_errors": 3,
+        "draft_errors_caught": 2
+      },
+      "4": {
+        "agreement": 0.953,
+        "median_review_seconds": 128,
+        "draft_errors": 3,
+        "draft_errors_caught": 2
+      },
+      "5": {
+        "agreement": 0.982,
+        "median_review_seconds": 109,
+        "draft_errors": 5,
+        "draft_errors_caught": 1
+      },
+      "6": {
+        "agreement": 0.963,
+        "median_review_seconds": 111,
+        "draft_errors": 4,
+        "draft_errors_caught": 1
+      },
+      "7": {
+        "agreement": 0.976,
+        "median_review_seconds": 90,
+        "draft_errors": 0,
+        "draft_errors_caught": 0
+      },
+      "8": {
+        "agreement": 0.979,
+        "median_review_seconds": 63,
+        "draft_errors": 2,
+        "draft_errors_caught": 0
+      }
+    },
+    "by_doc_form": {
+      "handwritten": {
+        "n": 98,
+        "eligible_n": 60,
+        "false_not_eligible": 0.0667,
+        "false_incomplete": 0.0244
+      },
+      "photo": {
+        "n": 79,
+        "eligible_n": 50,
+        "false_not_eligible": 0.1,
+        "false_incomplete": 0.0282
+      },
+      "typed": {
+        "n": 215,
+        "eligible_n": 123,
+        "false_not_eligible": 0.0081,
+        "false_incomplete": 0.016
+      }
+    },
+    "by_doc_lang": {
+      "ar": {
+        "n": 330,
+        "eligible_n": 192,
+        "false_not_eligible": 0.0469,
+        "false_incomplete": 0.0142
+      },
+      "en": {
+        "n": 32,
+        "eligible_n": 21,
+        "false_not_eligible": 0.0476,
+        "false_incomplete": 0.0667
+      },
+      "mixed": {
+        "n": 30,
+        "eligible_n": 20,
+        "false_not_eligible": 0.0,
+        "false_incomplete": 0.0345
+      }
+    },
+    "by_age_band": {
+      "18-39": {
+        "n": 152,
+        "eligible_n": 79,
+        "false_not_eligible": 0.0253,
+        "false_incomplete": 0.016
+      },
+      "40-59": {
+        "n": 140,
+        "eligible_n": 92,
+        "false_not_eligible": 0.0435,
+        "false_incomplete": 0.0238
+      },
+      "60+": {
+        "n": 100,
+        "eligible_n": 62,
+        "false_not_eligible": 0.0645,
+        "false_incomplete": 0.0222
+      }
+    },
+    "by_channel": {
+      "counter": {
+        "n": 220,
+        "eligible_n": 128,
+        "false_not_eligible": 0.0547,
+        "false_incomplete": 0.0256
+      },
+      "relative": {
+        "n": 63,
+        "eligible_n": 36,
+        "false_not_eligible": 0.0278,
+        "false_incomplete": 0.0
+      },
+      "web": {
+        "n": 109,
+        "eligible_n": 69,
+        "false_not_eligible": 0.029,
+        "false_incomplete": 0.0204
+      }
+    },
+    "by_district": {
+      "D1": {
+        "n": 101,
+        "eligible_n": 60,
+        "false_not_eligible": 0.0167,
+        "false_incomplete": 0.0333
+      },
+      "D2": {
+        "n": 86,
+        "eligible_n": 53,
+        "false_not_eligible": 0.0755,
+        "false_incomplete": 0.0125
+      },
+      "D3": {
+        "n": 59,
+        "eligible_n": 38,
+        "false_not_eligible": 0.0526,
+        "false_incomplete": 0.0213
+      },
+      "D4": {
+        "n": 87,
+        "eligible_n": 46,
+        "false_not_eligible": 0.0217,
+        "false_incomplete": 0.0139
+      },
+      "D5": {
+        "n": 59,
+        "eligible_n": 36,
+        "false_not_eligible": 0.0556,
+        "false_incomplete": 0.0192
+      }
+    },
+    "draft_by_doc_form": {
+      "handwritten": {
+        "n": 98,
+        "eligible_n": 60,
+        "false_not_eligible": 0.0833,
+        "false_incomplete": 0.0488
+      },
+      "photo": {
+        "n": 79,
+        "eligible_n": 50,
+        "false_not_eligible": 0.12,
+        "false_incomplete": 0.0423
+      },
+      "typed": {
+        "n": 215,
+        "eligible_n": 123,
+        "false_not_eligible": 0.0,
+        "false_incomplete": 0.0266
+      }
+    },
+    "draft_by_doc_lang": {
+      "ar": {
+        "n": 330,
+        "eligible_n": 192,
+        "false_not_eligible": 0.0521,
+        "false_incomplete": 0.0177
+      },
+      "en": {
+        "n": 32,
+        "eligible_n": 21,
+        "false_not_eligible": 0.0476,
+        "false_incomplete": 0.1
+      },
+      "mixed": {
+        "n": 30,
+        "eligible_n": 20,
+        "false_not_eligible": 0.0,
+        "false_incomplete": 0.1379
+      }
+    },
+    "draft_by_channel": {
+      "counter": {
+        "n": 220,
+        "eligible_n": 128,
+        "false_not_eligible": 0.0469,
+        "false_incomplete": 0.041
+      },
+      "relative": {
+        "n": 63,
+        "eligible_n": 36,
+        "false_not_eligible": 0.0556,
+        "false_incomplete": 0.0208
+      },
+      "web": {
+        "n": 109,
+        "eligible_n": 69,
+        "false_not_eligible": 0.0435,
+        "false_incomplete": 0.0306
+      }
+    },
+    "draft_by_age_band": {
+      "18-39": {
+        "n": 152,
+        "eligible_n": 79,
+        "false_not_eligible": 0.038,
+        "false_incomplete": 0.032
+      },
+      "40-59": {
+        "n": 140,
+        "eligible_n": 92,
+        "false_not_eligible": 0.0326,
+        "false_incomplete": 0.0317
+      },
+      "60+": {
+        "n": 100,
+        "eligible_n": 62,
+        "false_not_eligible": 0.0806,
+        "false_incomplete": 0.0444
+      }
+    },
+    "lazy_caseworkers": {
+      "CW04": {
+        "overrides": 0,
+        "median_review_seconds": 29
+      },
+      "CW09": {
+        "overrides": 0,
+        "median_review_seconds": 28
+      }
+    }
+  },
+  "pilot2": {
+    "cases": 720,
+    "draft_errors": 24,
+    "draft_errors_caught": 14,
+    "final_wrong": 10,
+    "wrongful_denials": 8,
+    "wrongful_denials_appealed": 4,
+    "appeals": 16,
+    "appeals_overturned": 4,
+    "overrides": 14,
+    "overrides_blank_reason": 3,
+    "agreement_overall": 0.981,
+    "by_week": {
+      "1": {
+        "agreement": 0.989,
+        "median_review_seconds": 137,
+        "draft_errors": 5,
+        "draft_errors_caught": 2
+      },
+      "2": {
+        "agreement": 0.983,
+        "median_review_seconds": 144,
+        "draft_errors": 4,
+        "draft_errors_caught": 3
+      },
+      "3": {
+        "agreement": 0.967,
+        "median_review_seconds": 155,
+        "draft_errors": 10,
+        "draft_errors_caught": 6
+      },
+      "4": {
+        "agreement": 0.983,
+        "median_review_seconds": 148,
+        "draft_errors": 5,
+        "draft_errors_caught": 3
+      }
+    },
+    "by_doc_form": {
+      "handwritten": {
+        "n": 165,
+        "eligible_n": 89,
+        "false_not_eligible": 0.0225,
+        "false_incomplete": 0.0
+      },
+      "photo": {
+        "n": 146,
+        "eligible_n": 86,
+        "false_not_eligible": 0.0349,
+        "false_incomplete": 0.0159
+      },
+      "typed": {
+        "n": 409,
+        "eligible_n": 241,
+        "false_not_eligible": 0.0041,
+        "false_incomplete": 0.0057
+      }
+    },
+    "by_doc_lang": {
+      "ar": {
+        "n": 585,
+        "eligible_n": 339,
+        "false_not_eligible": 0.0177,
+        "false_incomplete": 0.0
+      },
+      "en": {
+        "n": 75,
+        "eligible_n": 37,
+        "false_not_eligible": 0.0,
+        "false_incomplete": 0.0317
+      },
+      "mixed": {
+        "n": 60,
+        "eligible_n": 40,
+        "false_not_eligible": 0.0,
+        "false_incomplete": 0.0377
+      }
+    },
+    "by_age_band": {
+      "18-39": {
+        "n": 281,
+        "eligible_n": 162,
+        "false_not_eligible": 0.0247,
+        "false_incomplete": 0.0042
+      },
+      "40-59": {
+        "n": 269,
+        "eligible_n": 161,
+        "false_not_eligible": 0.0,
+        "false_incomplete": 0.0084
+      },
+      "60+": {
+        "n": 170,
+        "eligible_n": 93,
+        "false_not_eligible": 0.0215,
+        "false_incomplete": 0.0068
+      }
+    },
+    "by_channel": {
+      "counter": {
+        "n": 390,
+        "eligible_n": 218,
+        "false_not_eligible": 0.0138,
+        "false_incomplete": 0.0089
+      },
+      "relative": {
+        "n": 116,
+        "eligible_n": 66,
+        "false_not_eligible": 0.0152,
+        "false_incomplete": 0.0
+      },
+      "web": {
+        "n": 214,
+        "eligible_n": 132,
+        "false_not_eligible": 0.0152,
+        "false_incomplete": 0.0054
+      }
+    },
+    "by_district": {
+      "D1": {
+        "n": 161,
+        "eligible_n": 85,
+        "false_not_eligible": 0.0,
+        "false_incomplete": 0.0139
+      },
+      "D2": {
+        "n": 177,
+        "eligible_n": 104,
+        "false_not_eligible": 0.0288,
+        "false_incomplete": 0.0067
+      },
+      "D3": {
+        "n": 139,
+        "eligible_n": 80,
+        "false_not_eligible": 0.0125,
+        "false_incomplete": 0.0
+      },
+      "D4": {
+        "n": 155,
+        "eligible_n": 91,
+        "false_not_eligible": 0.022,
+        "false_incomplete": 0.0074
+      },
+      "D5": {
+        "n": 88,
+        "eligible_n": 56,
+        "false_not_eligible": 0.0,
+        "false_incomplete": 0.0
+      }
+    },
+    "draft_by_doc_form": {
+      "handwritten": {
+        "n": 165,
+        "eligible_n": 89,
+        "false_not_eligible": 0.0337,
+        "false_incomplete": 0.0
+      },
+      "photo": {
+        "n": 146,
+        "eligible_n": 86,
+        "false_not_eligible": 0.0581,
+        "false_incomplete": 0.0159
+      },
+      "typed": {
+        "n": 409,
+        "eligible_n": 241,
+        "false_not_eligible": 0.0415,
+        "false_incomplete": 0.0115
+      }
+    },
+    "draft_by_doc_lang": {
+      "ar": {
+        "n": 585,
+        "eligible_n": 339,
+        "false_not_eligible": 0.0531,
+        "false_incomplete": 0.0
+      },
+      "en": {
+        "n": 75,
+        "eligible_n": 37,
+        "false_not_eligible": 0.0,
+        "false_incomplete": 0.0635
+      },
+      "mixed": {
+        "n": 60,
+        "eligible_n": 40,
+        "false_not_eligible": 0.0,
+        "false_incomplete": 0.0377
+      }
+    },
+    "draft_by_channel": {
+      "counter": {
+        "n": 390,
+        "eligible_n": 218,
+        "false_not_eligible": 0.0229,
+        "false_incomplete": 0.0119
+      },
+      "relative": {
+        "n": 116,
+        "eligible_n": 66,
+        "false_not_eligible": 0.1515,
+        "false_incomplete": 0.0
+      },
+      "web": {
+        "n": 214,
+        "eligible_n": 132,
+        "false_not_eligible": 0.0227,
+        "false_incomplete": 0.0109
+      }
+    },
+    "draft_by_age_band": {
+      "18-39": {
+        "n": 281,
+        "eligible_n": 162,
+        "false_not_eligible": 0.0617,
+        "false_incomplete": 0.0084
+      },
+      "40-59": {
+        "n": 269,
+        "eligible_n": 161,
+        "false_not_eligible": 0.0373,
+        "false_incomplete": 0.0084
+      },
+      "60+": {
+        "n": 170,
+        "eligible_n": 93,
+        "false_not_eligible": 0.0215,
+        "false_incomplete": 0.0136
+      }
+    },
+    "lazy_caseworkers": {
+      "CW04": {
+        "overrides": 1,
+        "median_review_seconds": 133
+      },
+      "CW09": {
+        "overrides": 3,
+        "median_review_seconds": 64
+      }
+    }
+  },
+  "pilot2_audit": {
+    "cases": 274,
+    "draft_errors": 9,
+    "draft_errors_caught": 7,
+    "final_wrong": 2,
+    "wrongful_denials": 2,
+    "wrongful_denials_appealed": 0,
+    "appeals": 3,
+    "appeals_overturned": 0,
+    "overrides": 7,
+    "overrides_blank_reason": 2,
+    "agreement_overall": 0.974,
+    "by_week": {
+      "1": {
+        "agreement": 0.986,
+        "median_review_seconds": 145,
+        "draft_errors": 2,
+        "draft_errors_caught": 1
+      },
+      "2": {
+        "agreement": 0.986,
+        "median_review_seconds": 131,
+        "draft_errors": 2,
+        "draft_errors_caught": 1
+      },
+      "3": {
+        "agreement": 0.956,
+        "median_review_seconds": 157,
+        "draft_errors": 3,
+        "draft_errors_caught": 3
+      },
+      "4": {
+        "agreement": 0.969,
+        "median_review_seconds": 151,
+        "draft_errors": 2,
+        "draft_errors_caught": 2
+      }
+    },
+    "by_doc_form": {
+      "handwritten": {
+        "n": 58,
+        "eligible_n": 31,
+        "false_not_eligible": 0.0645,
+        "false_incomplete": 0.0
+      },
+      "photo": {
+        "n": 55,
+        "eligible_n": 31,
+        "false_not_eligible": 0.0,
+        "false_incomplete": 0.0
+      },
+      "typed": {
+        "n": 161,
+        "eligible_n": 92,
+        "false_not_eligible": 0.0,
+        "false_incomplete": 0.0
+      }
+    },
+    "by_doc_lang": {
+      "ar": {
+        "n": 229,
+        "eligible_n": 127,
+        "false_not_eligible": 0.0157,
+        "false_incomplete": 0.0
+      },
+      "en": {
+        "n": 27,
+        "eligible_n": 15,
+        "false_not_eligible": 0.0,
+        "false_incomplete": 0.0
+      },
+      "mixed": {
+        "n": 18,
+        "eligible_n": 12,
+        "false_not_eligible": 0.0,
+        "false_incomplete": 0.0
+      }
+    },
+    "by_age_band": {
+      "18-39": {
+        "n": 118,
+        "eligible_n": 64,
+        "false_not_eligible": 0.0156,
+        "false_incomplete": 0.0
+      },
+      "40-59": {
+        "n": 104,
+        "eligible_n": 61,
+        "false_not_eligible": 0.0,
+        "false_incomplete": 0.0
+      },
+      "60+": {
+        "n": 52,
+        "eligible_n": 29,
+        "false_not_eligible": 0.0345,
+        "false_incomplete": 0.0
+      }
+    },
+    "by_channel": {
+      "counter": {
+        "n": 147,
+        "eligible_n": 79,
+        "false_not_eligible": 0.0127,
+        "false_incomplete": 0.0
+      },
+      "relative": {
+        "n": 41,
+        "eligible_n": 23,
+        "false_not_eligible": 0.0,
+        "false_incomplete": 0.0
+      },
+      "web": {
+        "n": 86,
+        "eligible_n": 52,
+        "false_not_eligible": 0.0192,
+        "false_incomplete": 0.0
+      }
+    },
+    "by_district": {
+      "D1": {
+        "n": 67,
+        "eligible_n": 33,
+        "false_not_eligible": 0.0,
+        "false_incomplete": 0.0
+      },
+      "D2": {
+        "n": 65,
+        "eligible_n": 32,
+        "false_not_eligible": 0.0625,
+        "false_incomplete": 0.0
+      },
+      "D3": {
+        "n": 58,
+        "eligible_n": 34,
+        "false_not_eligible": 0.0,
+        "false_incomplete": 0.0
+      },
+      "D4": {
+        "n": 47,
+        "eligible_n": 32,
+        "false_not_eligible": 0.0,
+        "false_incomplete": 0.0
+      },
+      "D5": {
+        "n": 37,
+        "eligible_n": 23,
+        "false_not_eligible": 0.0,
+        "false_incomplete": 0.0
+      }
+    },
+    "draft_by_doc_form": {
+      "handwritten": {
+        "n": 58,
+        "eligible_n": 31,
+        "false_not_eligible": 0.0645,
+        "false_incomplete": 0.0
+      },
+      "photo": {
+        "n": 55,
+        "eligible_n": 31,
+        "false_not_eligible": 0.0,
+        "false_incomplete": 0.0
+      },
+      "typed": {
+        "n": 161,
+        "eligible_n": 92,
+        "false_not_eligible": 0.0543,
+        "false_incomplete": 0.0148
+      }
+    },
+    "draft_by_doc_lang": {
+      "ar": {
+        "n": 229,
+        "eligible_n": 127,
+        "false_not_eligible": 0.0551,
+        "false_incomplete": 0.0
+      },
+      "en": {
+        "n": 27,
+        "eligible_n": 15,
+        "false_not_eligible": 0.0,
+        "false_incomplete": 0.0909
+      },
+      "mixed": {
+        "n": 18,
+        "eligible_n": 12,
+        "false_not_eligible": 0.0,
+        "false_incomplete": 0.0
+      }
+    },
+    "draft_by_channel": {
+      "counter": {
+        "n": 147,
+        "eligible_n": 79,
+        "false_not_eligible": 0.0127,
+        "false_incomplete": 0.008
+      },
+      "relative": {
+        "n": 41,
+        "eligible_n": 23,
+        "false_not_eligible": 0.2174,
+        "false_incomplete": 0.0
+      },
+      "web": {
+        "n": 86,
+        "eligible_n": 52,
+        "false_not_eligible": 0.0192,
+        "false_incomplete": 0.0133
+      }
+    },
+    "draft_by_age_band": {
+      "18-39": {
+        "n": 118,
+        "eligible_n": 64,
+        "false_not_eligible": 0.0781,
+        "false_incomplete": 0.0101
+      },
+      "40-59": {
+        "n": 104,
+        "eligible_n": 61,
+        "false_not_eligible": 0.0164,
+        "false_incomplete": 0.0
+      },
+      "60+": {
+        "n": 52,
+        "eligible_n": 29,
+        "false_not_eligible": 0.0345,
+        "false_incomplete": 0.0222
+      }
+    },
+    "lazy_caseworkers": {
+      "CW04": {
+        "overrides": 0,
+        "median_review_seconds": 133
+      },
+      "CW09": {
+        "overrides": 1,
+        "median_review_seconds": 57
+      }
+    }
+  }
+}

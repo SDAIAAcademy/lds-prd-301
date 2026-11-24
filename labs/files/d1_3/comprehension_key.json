@@ -1,0 +1,26 @@
+{
+  "note": "Right letter of each question. For the author of the notice only, never shown to the readers.",
+  "key": {
+    "N1": {
+      "q1": "B",
+      "q2": "C",
+      "q3": "D",
+      "q4": "A",
+      "q5": "B"
+    },
+    "N2": {
+      "q1": "C",
+      "q2": "D",
+      "q3": "A",
+      "q4": "C",
+      "q5": "B"
+    },
+    "N3": {
+      "q1": "B",
+      "q2": "C",
+      "q3": "C",
+      "q4": "A",
+      "q5": "D"
+    }
+  }
+}

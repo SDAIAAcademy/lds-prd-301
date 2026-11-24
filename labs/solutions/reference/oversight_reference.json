@@ -1,0 +1,22 @@
+{
+  "service": "eligibility-drafting assistant, pilot 1 replay",
+  "capacity_hours_per_week": 10,
+  "second_review": {
+    "base_rate": 0.02,
+    "minutes_per_review": 9,
+    "catch_rate": 0.9,
+    "strata": [
+      {"when": {"draft": ["not_eligible", "incomplete"], "doc_form": ["handwritten", "photo"]}, "rate": 1.0},
+      {"when": {"draft": ["not_eligible", "incomplete"], "doc_lang": ["en", "mixed"]}, "rate": 1.0},
+      {"when": {"draft": ["not_eligible", "incomplete"]}, "rate": 0.25}
+    ]
+  },
+  "triggers": [
+    {"id": "T1", "type": "rubber_stamp", "agreement_min": 0.98, "median_seconds_max": 60, "min_cases": 10,
+     "action": "يراجع مشرف الأخصائيين أسبوع الأخصائي كله مراجعة ثانية، ويناقش معه أسبابه، ولا يُقيَّم الأخصائي بعدد الحالات في ذلك الأسبوع"},
+    {"id": "T2", "type": "blank_reasons", "max_share": 0.5, "min_overrides": 2,
+     "action": "تذكير وتدريب قصير، وتصبح خانة السبب إلزامية في الأداة"}
+  ],
+  "log_fields": ["case_id", "assistant_version", "draft", "final", "caseworker", "review_seconds", "override_reason", "second_review_result", "appeal_result"],
+  "roles": {"decides": "الأخصائي الاجتماعي المسند إليه الطلب", "second_review": "مشرف الأخصائيين، لا يراجع طلبًا قرره بنفسه", "appeal_review": "مسؤول التظلمات، من خارج فريق الأخصائيين"}
+}
