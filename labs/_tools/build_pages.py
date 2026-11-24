@@ -35,7 +35,7 @@ def page(path, title, body):
             'المقرر <span class="ltr">LDS-PRD-301</span></div>\n'
             f'<h1>{title}</h1>\n{body}\n</body>\n</html>\n')
     path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(html, encoding="utf-8")
+    path.write_text(html, encoding="utf-8", newline="\n")
 
 
 def pct(x, d=1):
@@ -250,7 +250,7 @@ def questions():
     page(FILES / "d1_3" / "comprehension_questions.html", "أسئلة الفهم الثابتة للإشعارات الثلاثة", body)
     key = {"note": "Right letter of each question. For the author of the notice only, never shown to the readers.",
            "key": {k: {f"q{i + 1}": v[i] for i in range(5)} for k, v in KEY.items()}}
-    (FILES / "d1_3" / "comprehension_key.json").write_text(json.dumps(key, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    (FILES / "d1_3" / "comprehension_key.json").write_text(json.dumps(key, ensure_ascii=False, indent=2) + "\n", encoding="utf-8", newline="\n")
     for nid, (title, qs) in QUESTIONS.items():
         for i, (q, opts) in enumerate(qs):
             assert len(opts) == 4, (nid, i)

@@ -69,7 +69,7 @@ def main():
     # comprehension example: six readers of a rent aid letter, correct answers per reader
     out["comprehension"] = {"before": [3, 2, 4, 3, 3, 2], "after": [5, 4, 4, 5, 4, 5], "missed_most_before": "q4 deadline"}
     REF.mkdir(parents=True, exist_ok=True)
-    (REF / "examples.json").write_text(json.dumps(out, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    (REF / "examples.json").write_text(json.dumps(out, ensure_ascii=False, indent=2) + "\n", encoding="utf-8", newline="\n")
     print(json.dumps(out, ensure_ascii=False))
 
 
