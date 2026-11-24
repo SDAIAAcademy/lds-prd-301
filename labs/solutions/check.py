@@ -95,6 +95,18 @@ def main():
     rc, out = run("slices.py", F / "capstone" / "pilot2_cases.csv", "--by", "channel,doc_lang,age_band,doc_form")
     ok("5/23  21.7% FAIL" in out and "0/15 too few" in out, "capstone pilot-2 audit: relative channel 21.7%, English too few for false not eligible")
     ok("1/29   3.4% ok" in out and "2/22   9.1% FAIL" in out and "5/64   7.8% FAIL" in out, "capstone inject cards: 60+ 3.4% ok, English false incomplete 9.1%, 18-39 7.8%")
+
+    # capstone key: which failing slices the relative channel explains, and which fail on their own
+    with open(F / "capstone" / "pilot2_cases.csv", encoding="utf-8") as f:
+        eligible = [r for r in csv.DictReader(f) if r["audit_decision"] == "eligible" and r["channel"] != "relative"]
+
+    def false_ne(field, value):
+        g = [r for r in eligible if r[field] == value]
+        return f"{sum(r['draft'] == 'not_eligible' for r in g)}/{len(g)}"
+
+    got = [false_ne("age_band", "18-39"), false_ne("doc_form", "typed"), false_ne("doc_lang", "ar"), false_ne("doc_form", "handwritten")]
+    ok(got == ["1/54", "0/77", "2/108", "2/29"],
+       f"capstone key, relative channel left out: 18-39 {got[0]}, typed {got[1]}, ar {got[2]}, handwritten {got[3]} (handwritten still above 5%)")
     print(f"\n{'all checks passed' if not fails else str(fails) + ' check(s) failed'}")
     return 1 if fails else 0
 

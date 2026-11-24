@@ -36,4 +36,4 @@ uv run tools/score_comprehension.py d1_3/answers_start.csv d1_3/comprehension_ke
 uv run tools/oversight_sim.py d2_1/oversight_start.json pilot1/pilot1_cases.csv d2_1/workload.csv
 ```
 
-أو `python tools/... `، أو `%run` في خدمة دفاتر مستضافة مجانية. ولكل أداة بديل بجدول محوري في جدول بيانات تصفه صفحة المختبر. احذف `ranked.csv` وأي ملف أخرجته الأدوات أو سجل جلسة قبل أن تعيد الملفات إلى المستودع.
+أو `python tools/... `، أو `%run` في خدمة دفاتر مستضافة مجانية. وترتيب السجل ونسب الشرائح ممكنة أيضًا بجدول محوري في جدول بيانات؛ أما `run_tests.py` و`oversight_sim.py` فتحتاجان بايثون أو خدمة الدفاتر. احذف `ranked.csv` وأي ملف أخرجته الأدوات أو سجل جلسة قبل أن تعيد الملفات إلى المستودع.
