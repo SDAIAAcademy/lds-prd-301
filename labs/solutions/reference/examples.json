@@ -1,0 +1,124 @@
+{
+  "overall": {
+    "k": 11,
+    "n": 224,
+    "rate": 0.0491
+  },
+  "typed": {
+    "k": 6,
+    "n": 170,
+    "rate": 0.0353
+  },
+  "photo": {
+    "k": 5,
+    "n": 54,
+    "rate": 0.0926,
+    "wilson95": [
+      0.0402,
+      0.1991
+    ]
+  },
+  "small_slice": {
+    "k": 1,
+    "n": 12,
+    "rate": 0.0833,
+    "wilson95": [
+      0.0149,
+      0.3539
+    ]
+  },
+  "capacity": {
+    "hours": 4,
+    "minutes_per_review": 12,
+    "reviews_per_week": 20,
+    "requests_per_week": 90,
+    "max_share": 0.2222
+  },
+  "rubber_stamp": {
+    "desk_A": {
+      "agreement": [
+        0.94,
+        0.95,
+        0.93,
+        0.95,
+        0.94,
+        0.96
+      ],
+      "median_seconds": [
+        160,
+        150,
+        155,
+        148,
+        152,
+        150
+      ]
+    },
+    "desk_B": {
+      "agreement": [
+        0.95,
+        0.98,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "median_seconds": [
+        140,
+        95,
+        60,
+        41,
+        38,
+        36
+      ]
+    }
+  },
+  "ranking": [
+    {
+      "harm": "urgent request drafted normal, eviction proceeds",
+      "impact": 4,
+      "likelihood": 2,
+      "level": 8,
+      "reversibility": "irreversible"
+    },
+    {
+      "harm": "normal request drafted urgent, queue jumps",
+      "impact": 2,
+      "likelihood": 4,
+      "level": 8,
+      "reversibility": "reversible"
+    },
+    {
+      "harm": "landlord learns of the request from a letter",
+      "impact": 3,
+      "likelihood": 2,
+      "level": 6,
+      "reversibility": "irreversible"
+    },
+    {
+      "harm": "letter in Arabic only",
+      "impact": 2,
+      "likelihood": 3,
+      "level": 6,
+      "reversibility": "costly"
+    }
+  ],
+  "comprehension": {
+    "before": [
+      3,
+      2,
+      4,
+      3,
+      3,
+      2
+    ],
+    "after": [
+      5,
+      4,
+      4,
+      5,
+      4,
+      5
+    ],
+    "missed_most_before": "q4 deadline"
+  }
+}

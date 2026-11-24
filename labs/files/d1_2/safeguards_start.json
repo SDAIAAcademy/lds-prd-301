@@ -1,0 +1,15 @@
+{
+  "service": "eligibility-drafting assistant, launch candidate v1.1",
+  "safeguards": [
+    {
+      "id": "S0",
+      "harm": "example",
+      "requirement": "مثال للبدء: لا تتجاوز نسبة المسودات الخاطئة 10% في المجموع. أبقه أو احذفه، ولا يُحسب من ضوابطك الخمسة.",
+      "owner": "قائد تطوير المساعد",
+      "test_owner": "مسؤول التقييم",
+      "tests": [
+        {"type": "rate_max", "metric": "wrong_any", "max": 0.10, "min_n": 20}
+      ]
+    }
+  ]
+}

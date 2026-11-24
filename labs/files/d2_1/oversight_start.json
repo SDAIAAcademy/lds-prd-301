@@ -1,0 +1,13 @@
+{
+  "service": "eligibility-drafting assistant, pilot 1 replay",
+  "capacity_hours_per_week": 10,
+  "second_review": {
+    "base_rate": 0.02,
+    "minutes_per_review": 9,
+    "catch_rate": 0.9,
+    "strata": []
+  },
+  "triggers": [],
+  "log_fields": ["case_id", "final"],
+  "roles": {"decides": "", "second_review": "", "appeal_review": ""}
+}

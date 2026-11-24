@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="ar" dir="rtl" data-ax="lab" data-track="executives">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>المختبر 1.2 · خمسة ضوابط باختباراتها · الذكاء الاصطناعي المسؤول بالتصميم لفرق المنتجات</title>
+<meta name="generator" content="SDAIA Academy engine 1.0.0">
+<link rel="icon" href="../_engine/icon.svg">
+<link rel="alternate" type="text/markdown" href="D1_2_safeguards.md">
+<link rel="describedby" href="../llms.txt">
+<link rel="stylesheet" href="../_engine/academy.css">
+</head>
+<body>
+<header>
+<div class="wrap">
+<div class="top"><div class="logo"></div><nav><a href="../index.html">صفحة المقرر</a><a href="../slides/day1.html#lab-1-2">العودة إلى الشرائح</a></nav></div>
+<span class="tag">المختبر 1.2</span>
+<h1>خمسة ضوابط باختباراتها</h1>
+<p>تكتب خمسة ضوابط للأضرار الخمسة الأعلى، لكل منها متطلب ومالك ومالك للاختبار واختبار يُشغَّل على 250 مسودة مسجلة للنسخة المرشحة للإطلاق، وتبني قائمة أعمال تربط كل بند بضرره واختباره ونتيجته.</p>
+<div class="meta"><span>60 دقيقة</span><span>اليوم 1</span><span>الجلسة 2: ضوابط الحماية متطلبات لها اختبارات ومالكون</span></div>
+</div>
+</header>
+<main class="wrap">
+<article class="lab" data-lab="1.2">
+  <div class="box goal">
+    <h3>ستخرج من هذا المختبر بـ</h3>
+    <p>ملف <code>my_safeguards.json</code> فيه خمسة ضوابط، لكل منها متطلب ومالك ومالك للاختبار واختبار أو أكثر نتيجته اجتياز أو إخفاق، وناتج تشغيله على 250 مسودة مسجلة للنسخة 1.1، وقائمة أعمال تربط كل ضابط بضرره واختباره ونتيجته. هذا دليل الناتج الثاني.</p>
+  </div>
+
+  <h2>ما تحتاجه</h2>
+  <div class="files">
+    <a href="files/d1_2/top5_harms.html" target="_blank"><b>top5_harms.html</b><span>الأضرار الخمسة الأعلى: ملف البداية لمن اختلف ترتيبه.</span></a>
+    <a href="files/d1_2/drafts_v11.csv" download><b>drafts_v11.csv</b><span>250 مسودة مسجلة للنسخة المرشحة 1.1، مع القرار المتوقع لكل منها. محاكاة، لا نموذج.</span></a>
+    <a href="files/d1_2/safeguards_start.json" download><b>safeguards_start.json</b><span>ملف البداية: ضابط مثال واحد.</span></a>
+    <a href="files/tools/run_tests.py" download><b>run_tests.py</b><span>يشغّل الاختبارات ويطبع النتيجة لكل شريحة.</span></a>
+    <a href="files/d1_2/backlog_template.csv" download><b>backlog_template.csv</b><span>قائمة الأعمال التي تملؤها.</span></a>
+  </div>
+  <div class="callout tip"><b>كيف تشغّل البرنامج.</b> في <code>files/tools</code>: <code>uv run run_tests.py ../d1_2/safeguards_start.json ../d1_2/drafts_v11.csv</code>. أنواع الاختبارات الأربعة وحقولها مكتوبة في رأس البرنامج: <code>rate_max</code> و<code>gap_max</code> و<code>letter_has</code> و<code>field_equals</code>. في عملك تكتب الاختبارات نفسها بأداة اختبار مثل promptfoo أو Inspect؛ الفكرة واحدة: حالة، ومخرج، وشرط ينجح أو يفشل.</div>
+
+  <h2>الخطوات</h2>
+  <div class="step">
+    <h3>1 · اقرأ الأضرار الخمسة وملف البداية، وشغّل البرنامج عليه <span class="min">8 د</span></h3>
+    <p>انسخ ملف البداية باسم <code>my_safeguards.json</code>. الضابط المثال S0 ينجح على المجموعة كلها: ماذا لا يقول لك؟</p>
+  </div>
+  <div class="step">
+    <h3>2 · اكتب الضوابط الخمسة متطلبات، لكل منها مالك ومالك للاختبار <span class="min">15 د</span></h3>
+    <p>لكل ضرر جملة متطلب تبدأ بما يجب أن يكون («كل خطاب…»، «لا تتجاوز…»)، فيها رقم إن أمكن. المالك من الأدوار في الحالة، ومالك الاختبار غيره: من يبني الضابط لا يعتمد اختباره.</p>
+  </div>
+  <div class="step">
+    <h3>3 · اكتب اختبار كل ضابط بشرائحه وعتبته وحده الأدنى للعدد <span class="min">15 د</span></h3>
+    <p>اختر الشريحة التي يظهر فيها الضرر (<code>doc_form</code>، <code>doc_lang</code>، <code>age_band</code>، <code>channel</code>)، والعتبة، و<code>min_n</code>. ضابط بلا شريحة يخفي الفئة الصغيرة في المجموع.</p>
+  </div>
+  <div class="step">
+    <h3>4 · شغّل الاختبارات واقرأ الشرائح، وما لم يكفِ عدده <span class="min">12 د</span></h3>
+    <p><code>uv run run_tests.py my_safeguards.json ../d1_2/drafts_v11.csv</code>. اقرأ كل سطر فيه FAIL أو <code>too few</code>. «عدد لا يكفي» ليس اجتيازًا: اكتب ماذا يحدث لتلك الشريحة حتى يكفي العدد.</p>
+  </div>
+  <div class="step">
+    <h3>5 · اكتب قائمة الأعمال: الضرر والضابط والاختبار والنتيجة والخطوة التالية <span class="min">10 د</span></h3>
+    <p>املأ <code>backlog_template.csv</code> سطرًا لكل ضابط. في <code>status</code>: جاهز، أو شرط قبل الإطلاق، أو يمنع إطلاق شريحة. سلّم الملفين وناتج التشغيل.</p>
+  </div>
+  <div class="step stretch">
+    <h3>✱ إضافي</h3>
+    <p>الشريحة «مختلطة اللغة» عددها لا يكفي: كم حالة تحتاج، ومن أين تأتي بها دون أن تؤخر الإطلاق كله؟</p>
+  </div>
+
+  <h2>أسئلة تحقق</h2>
+  <ol class="checks">
+    <li>اختبار نجح على المجموعة كلها وفشل في شريحة: أيهما يذهب إلى لجنة الإطلاق؟</li>
+    <li>لماذا لا يعتمد قائد تطوير المساعد نتيجة اختبار ضابطه؟</li>
+    <li>ضابط لا تستطيع أن تكتب له اختبارًا: ما الذي ينقصه؟</li>
+  </ol>
+
+  <details class="instructor">
+    <summary>للمدرّب</summary>
+    <p>المرجع في <code>solutions/reference/safeguards_reference.json</code> وقائمة الأعمال في <code>backlog_reference.csv</code>. ناتج تشغيله: S1 إخفاق (المصورة 3/26 = 11.5%؛ بخط اليد 1/28 = 3.6%؛ المطبوعة 1/81 = 1.2%؛ الفرق العمري 1.2 نقطة اجتياز؛ العلامة 100/100)، وS2 إخفاق (الإنجليزية 4/34 = 11.8%، والمختلطة 2/15 لا يكفي عددها)، وS3 إخفاق (الخطاب الإنجليزي يذكر التظلم في 38/124 = 30.6%)، وS4 وS5 اجتياز. ملف البداية: S0 ينجح، 11 مسودة خاطئة من 250 = 4.4% في المجموع.</p>
+    <p>التقدير (6 من 25): خمسة متطلبات قابلة للاختبار مربوطة بأضرارها (2)، وشريحة وعتبة وحد أدنى للعدد حيث يظهر الضرر في فئة (2)، ومالك ومالك اختبار مختلفان لكل ضابط (1)، وقائمة الأعمال بنتيجة وخطوة تالية لكل بند ومنها «عدد لا يكفي» (1).</p>
+    <p>الفخاخ: ضوابط بلا شرائح تنجح كلها؛ وقراءة «too few» اجتيازًا؛ وجعل مالك الاختبار هو مالك الضابط (البرنامج يطبع تنبيه فصل المهام)؛ وضابط للموافقة الشكلية لا يُختبر على المسودات: S4 يجعل التحقق ممكنًا، وقياسه في المختبر 2.1.</p>
+  </details>
+</article>
+<nav class="pager"><a href="D1_1_harms.html" rel="prev">→ المختبر السابق</a><a href="D1_3_notices.html" rel="next">المختبر التالي ←</a></nav>
+</main>
+<footer><div class="wrap">أكاديمية سدايا · مسار التنفيذيين والقادة · الذكاء الاصطناعي المسؤول بالتصميم لفرق المنتجات<br><span class="muted">إصدار المقرر 2027.1.0 · المحرّك 1.0.0 · بُني في ⁦2026-11-24⁩ · الإيداع 7db719c</span></div></footer>
+<script type="application/json" id="academy-data">{"v":1,"engine":"1.0.0","build":{"at":"2026-11-24T23:57:55Z","version":"2027.1.0","commit":"7db719c"},"course":{"id":"lds-prd-301","code":"LDS-PRD-301","title":"الذكاء الاصطناعي المسؤول بالتصميم لفرق المنتجات","track":"executives","lang":"ar","dir":"rtl","url":"https://sdaiaacademy.github.io/lds-prd-301/","repo":"SDAIAAcademy/lds-prd-301","home":"../index.html"},"lab":{"id":"1.2","title":"خمسة ضوابط باختباراتها","summary":"تكتب خمسة ضوابط للأضرار الخمسة الأعلى، لكل منها متطلب ومالك ومالك للاختبار واختبار يُشغَّل على 250 مسودة مسجلة للنسخة المرشحة للإطلاق، وتبني قائمة أعمال تربط كل بند بضرره واختباره ونتيجته.","minutes":60,"day":1,"unit":"اليوم 1","session":2,"deck":"../slides/day1.html#lab-1-2","prev":"D1_1_harms.html","next":"D1_3_notices.html","alt":{}},"ai":{"context":{"course":"../context/course.md","courseJs":"../context/course.js","day":null,"llms":"../llms.txt"},"tasks":[],"tools":[]},"features":{},"strings":{}}</script>
+<script src="../_engine/academy.js"></script>
+</body>
+</html>

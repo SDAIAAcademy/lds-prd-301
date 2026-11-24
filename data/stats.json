@@ -1,0 +1,504 @@
+{
+  "v": 1,
+  "engine": "1.0.0",
+  "build": {
+    "at": "2026-11-24T23:57:55Z",
+    "version": "2027.1.0",
+    "commit": "7db719c"
+  },
+  "lang": "ar",
+  "dir": "rtl",
+  "totals": {
+    "decks": 3,
+    "slides": 67,
+    "words": 4233,
+    "notes": 66,
+    "notes_ratio": 0.99,
+    "activities": 5,
+    "styles": 12,
+    "slide_minutes": null,
+    "components": {
+      "cards": 43,
+      "pills": 0,
+      "callouts": 28,
+      "tables": 9,
+      "code": 0,
+      "tokens": 0,
+      "flows": 6,
+      "stats": 2,
+      "bars": 3,
+      "meters": 0,
+      "agendas": 2,
+      "quizzes": 5,
+      "checklists": 4,
+      "prompts": 0,
+      "chats": 0,
+      "tools": 0,
+      "traces": 0,
+      "ladders": 0,
+      "figures": 0,
+      "matrices": 1,
+      "timers": 4,
+      "columns": 29,
+      "images": 0,
+      "drawings": 0,
+      "fragments": 10
+    },
+    "minutes": 480
+  },
+  "decks": [
+    {
+      "deck": "day1",
+      "kind": "day",
+      "label": "اليوم 1",
+      "title": "من الأضرار إلى الضوابط والإشعارات",
+      "slides": 36,
+      "words": 2423,
+      "notes": 36,
+      "notes_ratio": 1,
+      "activities": 3,
+      "styles": 6,
+      "slide_minutes": null,
+      "components": {
+        "cards": 25,
+        "pills": 0,
+        "callouts": 14,
+        "tables": 5,
+        "code": 0,
+        "tokens": 0,
+        "flows": 3,
+        "stats": 2,
+        "bars": 2,
+        "meters": 0,
+        "agendas": 1,
+        "quizzes": 3,
+        "checklists": 3,
+        "prompts": 0,
+        "chats": 0,
+        "tools": 0,
+        "traces": 0,
+        "ladders": 0,
+        "figures": 0,
+        "matrices": 1,
+        "timers": 0,
+        "columns": 18,
+        "images": 0,
+        "drawings": 0,
+        "fragments": 5
+      },
+      "minutes": 360,
+      "sessions": [
+        {
+          "n": 1,
+          "label": "الجلسة 1",
+          "title": "الأضرار عبر الفئات، وفيها من لا يستخدم المنتج",
+          "slides": 11,
+          "words": 822,
+          "notes": 11,
+          "notes_ratio": 1,
+          "activities": 1,
+          "styles": 1,
+          "slide_minutes": null,
+          "components": {
+            "cards": 6,
+            "pills": 0,
+            "callouts": 4,
+            "tables": 2,
+            "code": 0,
+            "tokens": 0,
+            "flows": 1,
+            "stats": 0,
+            "bars": 0,
+            "meters": 0,
+            "agendas": 0,
+            "quizzes": 1,
+            "checklists": 1,
+            "prompts": 0,
+            "chats": 0,
+            "tools": 0,
+            "traces": 0,
+            "ladders": 0,
+            "figures": 0,
+            "matrices": 1,
+            "timers": 0,
+            "columns": 6,
+            "images": 0,
+            "drawings": 0,
+            "fragments": 5
+          },
+          "minutes": 120,
+          "lab_minutes": 60
+        },
+        {
+          "n": 2,
+          "label": "الجلسة 2",
+          "title": "ضوابط الحماية متطلبات لها اختبارات ومالكون",
+          "slides": 10,
+          "words": 649,
+          "notes": 10,
+          "notes_ratio": 1,
+          "activities": 1,
+          "styles": 3,
+          "slide_minutes": null,
+          "components": {
+            "cards": 5,
+            "pills": 0,
+            "callouts": 5,
+            "tables": 3,
+            "code": 0,
+            "tokens": 0,
+            "flows": 1,
+            "stats": 2,
+            "bars": 1,
+            "meters": 0,
+            "agendas": 0,
+            "quizzes": 1,
+            "checklists": 1,
+            "prompts": 0,
+            "chats": 0,
+            "tools": 0,
+            "traces": 0,
+            "ladders": 0,
+            "figures": 0,
+            "matrices": 0,
+            "timers": 0,
+            "columns": 4,
+            "images": 0,
+            "drawings": 0,
+            "fragments": 0
+          },
+          "minutes": 120,
+          "lab_minutes": 60
+        },
+        {
+          "n": 3,
+          "label": "الجلسة 3",
+          "title": "الإفصاح والتفسير والتظلم",
+          "slides": 11,
+          "words": 657,
+          "notes": 11,
+          "notes_ratio": 1,
+          "activities": 1,
+          "styles": 2,
+          "slide_minutes": null,
+          "components": {
+            "cards": 10,
+            "pills": 0,
+            "callouts": 4,
+            "tables": 0,
+            "code": 0,
+            "tokens": 0,
+            "flows": 1,
+            "stats": 0,
+            "bars": 1,
+            "meters": 0,
+            "agendas": 0,
+            "quizzes": 1,
+            "checklists": 1,
+            "prompts": 0,
+            "chats": 0,
+            "tools": 0,
+            "traces": 0,
+            "ladders": 0,
+            "figures": 0,
+            "matrices": 0,
+            "timers": 0,
+            "columns": 6,
+            "images": 0,
+            "drawings": 0,
+            "fragments": 0
+          },
+          "minutes": 120,
+          "lab_minutes": 60
+        }
+      ]
+    },
+    {
+      "deck": "day2",
+      "kind": "day",
+      "label": "اليوم 2",
+      "title": "الإشراف المقيس وقرار الإطلاق",
+      "slides": 18,
+      "words": 1290,
+      "notes": 18,
+      "notes_ratio": 1,
+      "activities": 2,
+      "styles": 0,
+      "slide_minutes": null,
+      "components": {
+        "cards": 12,
+        "pills": 0,
+        "callouts": 10,
+        "tables": 2,
+        "code": 0,
+        "tokens": 0,
+        "flows": 2,
+        "stats": 0,
+        "bars": 0,
+        "meters": 0,
+        "agendas": 1,
+        "quizzes": 2,
+        "checklists": 1,
+        "prompts": 0,
+        "chats": 0,
+        "tools": 0,
+        "traces": 0,
+        "ladders": 0,
+        "figures": 0,
+        "matrices": 0,
+        "timers": 1,
+        "columns": 8,
+        "images": 0,
+        "drawings": 0,
+        "fragments": 5
+      },
+      "minutes": 120,
+      "sessions": [
+        {
+          "n": 1,
+          "label": "الجلسة 1",
+          "title": "الإشراف المقيس ومراجعة الإطلاق",
+          "slides": 14,
+          "words": 1057,
+          "notes": 14,
+          "notes_ratio": 1,
+          "activities": 1,
+          "styles": 0,
+          "slide_minutes": null,
+          "components": {
+            "cards": 9,
+            "pills": 0,
+            "callouts": 8,
+            "tables": 2,
+            "code": 0,
+            "tokens": 0,
+            "flows": 2,
+            "stats": 0,
+            "bars": 0,
+            "meters": 0,
+            "agendas": 0,
+            "quizzes": 1,
+            "checklists": 1,
+            "prompts": 0,
+            "chats": 0,
+            "tools": 0,
+            "traces": 0,
+            "ladders": 0,
+            "figures": 0,
+            "matrices": 0,
+            "timers": 1,
+            "columns": 7,
+            "images": 0,
+            "drawings": 0,
+            "fragments": 5
+          },
+          "minutes": 120,
+          "lab_minutes": 60
+        }
+      ]
+    },
+    {
+      "deck": "capstone",
+      "kind": "capstone",
+      "label": "المشروع الختامي",
+      "title": "الدفاع عن حزمة مراجعة الإطلاق",
+      "slides": 13,
+      "words": 520,
+      "notes": 12,
+      "notes_ratio": 0.92,
+      "activities": 0,
+      "styles": 6,
+      "slide_minutes": null,
+      "components": {
+        "cards": 6,
+        "pills": 0,
+        "callouts": 4,
+        "tables": 2,
+        "code": 0,
+        "tokens": 0,
+        "flows": 1,
+        "stats": 0,
+        "bars": 1,
+        "meters": 0,
+        "agendas": 0,
+        "quizzes": 0,
+        "checklists": 0,
+        "prompts": 0,
+        "chats": 0,
+        "tools": 0,
+        "traces": 0,
+        "ladders": 0,
+        "figures": 0,
+        "matrices": 0,
+        "timers": 3,
+        "columns": 3,
+        "images": 0,
+        "drawings": 0,
+        "fragments": 0
+      },
+      "minutes": null,
+      "sessions": []
+    }
+  ],
+  "coverage": [
+    {
+      "id": "LO1",
+      "text": "يحلل الأضرار عبر الفئات المتأثرة والإخفاق وسوء الاستخدام والتوسع، مرتبة بحسب الشدة والاحتمالية وقابلية التراجع، استنادًا إلى المواصفات والشخصيات الافتراضية وقائمة مرجعية للتحيز",
+      "level": "Applied",
+      "slides": [
+        "day1#before-we-start",
+        "day1#recap-201",
+        "day1#harms-before-build",
+        "day1#who-is-affected",
+        "day1#four-categories",
+        "day1#bias-checklist",
+        "day1#risk-matrix",
+        "day1#ranking-example",
+        "day1#evidence-not-impression",
+        "day1#ai-off-first",
+        "day1#checkpoint-1",
+        "capstone#deliverables"
+      ],
+      "activities": [
+        "day1#checkpoint-1-q1"
+      ],
+      "sessions": [
+        "day1/1"
+      ],
+      "labs": [
+        "1.1"
+      ],
+      "questions": [
+        "q-lo1-1",
+        "q-lo1-2",
+        "q-lo1-3",
+        "q-lo1-4"
+      ],
+      "covered": true
+    },
+    {
+      "id": "LO2",
+      "text": "يصوغ ضوابط الحماية في صورة متطلبات لها مالكون واختبارات نتيجتها اجتياز أو إخفاق وشرائح إطلاق للفئات الفرعية، استنادًا إلى الأضرار الخمسة الأعلى ترتيبًا",
+      "level": "Applied",
+      "slides": [
+        "day1#safeguard-anatomy",
+        "day1#wish-vs-requirement",
+        "day1#test-kinds",
+        "day1#overall-hides-slice",
+        "day1#min-n",
+        "day1#segregation",
+        "day1#backlog",
+        "day1#checkpoint-2",
+        "day2#day1-review",
+        "day2#review-check",
+        "capstone#deliverables"
+      ],
+      "activities": [
+        "day1#checkpoint-2-q1",
+        "day2#review-check-q1"
+      ],
+      "sessions": [
+        "day1/2"
+      ],
+      "labs": [
+        "1.2"
+      ],
+      "questions": [
+        "q-lo2-1",
+        "q-lo2-2",
+        "q-lo2-3",
+        "q-lo2-4"
+      ],
+      "covered": true
+    },
+    {
+      "id": "LO3",
+      "text": "يصوغ إشعارات الإفصاح والتفسير والتظلم للمتقدمين والأخصائيين بالعربية والإنجليزية، استنادًا إلى مسار القرار",
+      "level": "Applied",
+      "slides": [
+        "day1#tell-people",
+        "day1#notice-order",
+        "day1#usable-explanation",
+        "day1#appeal-route",
+        "day1#caseworker-notice",
+        "day1#comprehension-test",
+        "day1#checkpoint-3",
+        "capstone#deliverables"
+      ],
+      "activities": [
+        "day1#checkpoint-3-q1"
+      ],
+      "sessions": [
+        "day1/3"
+      ],
+      "labs": [
+        "1.3"
+      ],
+      "questions": [
+        "q-lo3-1",
+        "q-lo3-2",
+        "q-lo3-3",
+        "q-lo3-4"
+      ],
+      "covered": true
+    },
+    {
+      "id": "LO4",
+      "text": "يصمم نموذجًا للإشراف البشري فيه أخذ عينات للمراجعة وسجلات للتجاوز ومقاييس للموافقة الشكلية، استنادًا إلى بيانات عبء العمل لدى الأخصائيين",
+      "level": "Performance",
+      "slides": [
+        "day2#nominal-oversight",
+        "day2#override-log",
+        "day2#automation-bias",
+        "day2#sample-capacity",
+        "day2#triggers",
+        "day2#checkpoint-4",
+        "capstone#deliverables"
+      ],
+      "activities": [
+        "day2#checkpoint-4-q1"
+      ],
+      "sessions": [
+        "day2/1"
+      ],
+      "labs": [
+        "2.1"
+      ],
+      "questions": [
+        "q-lo4-1",
+        "q-lo4-2",
+        "q-lo4-3",
+        "q-lo4-4"
+      ],
+      "covered": true
+    },
+    {
+      "id": "LO5",
+      "text": "يقرر جاهزية الإطلاق استنادًا إلى نتائج الفئات الفرعية واختبارات ضوابط الحماية والمخاطر القائمة، استنادًا إلى حزمة أدلة وأمام لجنة مراجعة",
+      "level": "Performance",
+      "slides": [
+        "day2#launch-options",
+        "day2#conditional-launch",
+        "day2#launch-roles",
+        "capstone#deliverables",
+        "capstone#format",
+        "capstone#subgroup-card"
+      ],
+      "activities": [],
+      "sessions": [
+        "day2/1"
+      ],
+      "labs": [
+        "2.1"
+      ],
+      "questions": [
+        "q-lo5-1",
+        "q-lo5-2",
+        "q-lo5-3",
+        "q-lo5-4",
+        "q-lo5-5"
+      ],
+      "covered": true
+    }
+  ]
+}

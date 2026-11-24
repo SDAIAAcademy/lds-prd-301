@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="ar" dir="rtl" data-ax="lab" data-track="executives">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>المختبر 1.3 · كتابة الإشعارات واختبار فهمها · الذكاء الاصطناعي المسؤول بالتصميم لفرق المنتجات</title>
+<meta name="generator" content="SDAIA Academy engine 1.0.0">
+<link rel="icon" href="../_engine/icon.svg">
+<link rel="alternate" type="text/markdown" href="D1_3_notices.md">
+<link rel="describedby" href="../llms.txt">
+<link rel="stylesheet" href="../_engine/academy.css">
+</head>
+<body>
+<header>
+<div class="wrap">
+<div class="top"><div class="logo"></div><nav><a href="../index.html">صفحة المقرر</a><a href="../slides/day1.html#lab-1-3">العودة إلى الشرائح</a></nav></div>
+<span class="tag">المختبر 1.3</span>
+<h1>كتابة الإشعارات واختبار فهمها</h1>
+<p>تكتب ثلاثة إشعارات بالعربية والإنجليزية: إفصاح للمتقدم عند الطلب، وخطاب قرار «غير مستحق» بتفسيره وتظلمه، وإشعار للأخصائي داخل الأداة؛ ثم يقرؤها زملاء ويجيبون عن خمسة أسئلة ثابتة لكل إشعار، وتعيد الكتابة حتى يجيب كل قارئ عن أربعة على الأقل.</p>
+<div class="meta"><span>60 دقيقة</span><span>اليوم 1</span><span>الجلسة 3: الإفصاح والتفسير والتظلم</span></div>
+</div>
+</header>
+<main class="wrap">
+<article class="lab" data-lab="1.3">
+  <div class="box goal">
+    <h3>ستخرج من هذا المختبر بـ</h3>
+    <p>ثلاثة إشعارات بالعربية والإنجليزية (إفصاح للمتقدم عند الطلب، وخطاب قرار «غير مستحق» بتفسيره وتظلمه، وإشعار للأخصائي داخل الأداة)، وناتج اختبار فهمها على زملاء: كل قارئ يجيب عن أربعة من خمسة أسئلة على الأقل. هذا دليل الناتج الثالث.</p>
+  </div>
+
+  <h2>ما تحتاجه</h2>
+  <div class="files">
+    <a href="files/d1_3/decision_flow.html" target="_blank"><b>decision_flow.html</b><span>مسار القرار بعد الإطلاق: الوقائع التي تنقلها الإشعارات.</span></a>
+    <a href="files/d1_3/current_letter.html" target="_blank"><b>current_letter.html</b><span>خطاب التجربة الأولى، ووقائع الطلب الذي تكتب له خطاب N2.</span></a>
+    <a href="files/d1_3/notice_template.md" download><b>notice_template.md</b><span>القالب الذي تكتب فيه الإشعارات الثلاثة.</span></a>
+    <a href="files/d1_3/comprehension_questions.html" target="_blank"><b>comprehension_questions.html</b><span>خمسة أسئلة ثابتة لكل إشعار، للقراء.</span></a>
+    <a href="files/d1_3/answers_start.csv" download><b>answers_start.csv</b><span>تكتب فيه إجابات قرائك برموزهم.</span></a>
+    <a href="files/d1_3/comprehension_key.json" download><b>comprehension_key.json</b><span>مفتاح الإجابة، للكاتب وحده.</span></a>
+    <a href="files/tools/score_comprehension.py" download><b>score_comprehension.py</b><span>يحسب نتيجة كل قارئ ويقول أي سؤال فات.</span></a>
+  </div>
+  <div class="callout tip"><b>الذكاء الاصطناعي كامل في الكتابة.</b> يجوز أن تكتب الإشعارات بمساعد محادثة، بشرط أن تلصق فيه الوقائع من <code>decision_flow.html</code> فقط (ملف تدريبي مصنف «عام»)، وأن تراجع كل جملة مقابل المسار. لا رقم هاتف ولا بريد ولا رابط في أي إشعار.</div>
+
+  <h2>الخطوات</h2>
+  <div class="step">
+    <h3>1 · اقرأ مسار القرار والخطاب الحالي، واكتب ما ينقصه <span class="min">7 د</span></h3>
+    <p>اقرأ الخطاب بعين A1 ثم A5: من قرر، ولماذا، وماذا يفعلان الآن؟ اكتب في سطر كل ما لا يجيب عنه الخطاب.</p>
+  </div>
+  <div class="step">
+    <h3>2 · اكتب الإشعارات الثلاثة بالعربية والإنجليزية، بالذكاء الاصطناعي إن شئت <span class="min">20 د</span></h3>
+    <p>في <code>notice_template.md</code>: N1 عند التقديم، وN2 للطلب R1-0412، وN3 للأخصائي. القرار ومن اتخذه في الجملة الأولى؛ والقاعدة والواقعة؛ وما يفعله القارئ بعد ذلك في فقرة وحدها.</p>
+    <div class="prompt" data-tool="مساعد محادثة">اكتب خطاب قرار قصيرًا بالعربية ثم بالإنجليزية لمتقدم بطلب إعانة، بجمل قصيرة ولغة يفهمها من لم يكمل تعليمه. استعمل هذه الوقائع وحدها ولا تضف إليها شيئًا: <span class="ph">الصق الوقائع من مسار القرار ووقائع الطلب</span>. ابدأ بالقرار ومن اتخذه، ثم السبب بالرقم والقاعدة، ثم دور المساعد، ثم ما يفعله المتقدم إن اعترض. لا تكتب أرقام هواتف ولا عناوين بريد ولا روابط.</div>
+  </div>
+  <div class="step">
+    <h3>3 · تبادل الإشعارات: يقرأ زميلان، ثم يجيبان عن الأسئلة دون النظر إليها <span class="min">13 د</span></h3>
+    <p>انسخ <code>answers_start.csv</code> باسم <code>answers.csv</code>. القاعدة قارئان على الأقل لكل إشعار في كل لغة: يقرأ N2 زميلان بالعربية وزميلان بالإنجليزية، ويقرأ N1 زميلان وN3 زميلان، كل منهما بلغة واحدة. ابدأ بـN2؛ وما لم يتسع له الوقت من N1 وN3 يكتمل في الخطوة 5. يقرأ القارئ دقيقتين، ويغلق الإشعار، ويجيب عن أسئلته الخمسة. اكتب الإجابات في <code>answers.csv</code> برمز القارئ (P1، P2…)، لا باسمه.</p>
+  </div>
+  <div class="step">
+    <h3>4 · احسب النتيجة بالبرنامج، وأعد كتابة ما فات القراء <span class="min">12 د</span></h3>
+    <p><code>uv run score_comprehension.py answers.csv ../d1_3/comprehension_key.json</code>. لكل سؤال فات قارئًا: أي جملة في الإشعار كان يجب أن تجيب عنه؟ أعد كتابتها، وسجّل التغيير في آخر القالب.</p>
+  </div>
+  <div class="step">
+    <h3>5 · أعد الاختبار على قارئ جديد للنسخة المعدلة <span class="min">8 د</span></h3>
+    <p>قارئ لم ير النسخة الأولى، والأسئلة نفسها، وتكتب إجاباته في <code>answers.csv</code> بدل إجابات القارئ الذي فاته أكثر من سؤال، ثم تشغّل البرنامج من جديد؛ وأكمل قراءات N1 وN3 إن بقي منها شيء. سلّم القالب و<code>answers.csv</code> وناتج البرنامج.</p>
+  </div>
+  <div class="step stretch">
+    <h3>✱ إضافي</h3>
+    <p>متقدم لا يقرأ: كيف يصل إليه الإشعار نفسه، ومن يتأكد أنه فهم مهلة التظلم؟</p>
+  </div>
+
+  <h2>أسئلة تحقق</h2>
+  <ol class="checks">
+    <li>إشعار يقول «أُعد بمساعدة الذكاء الاصطناعي» ولا يقول من قرر: أي سؤال يفوت القارئ؟</li>
+    <li>لماذا تُكتب قناة غير رقمية للتظلم حتى في خطاب يصل بالويب؟</li>
+    <li>قارئان أجابا عن أربعة، وثالث عن ثلاثة: هل نجح الإشعار بقاعدة المقرر؟</li>
+  </ol>
+
+  <details class="instructor">
+    <summary>للمدرّب</summary>
+    <p>إشعارات مرجعية في <code>solutions/reference/notices_reference.md</code>، وناتج مثال في <code>answers_sample.csv</code>: N2 بالعربية ينجح (5/5 و4/5)، وبالإنجليزية يفشل (4/5 و3/5) لأن القارئين فاتهما السؤال 4، القناة غير الرقمية. المفتاح: N1 <code>BCDAB</code>، وN2 <code>CDACB</code>، وN3 <code>BCCAD</code>.</p>
+    <p>التقدير (6 من 25): الإشعارات الثلاثة باللغتين تنقل وقائع المسار وحدها (2)، والقرار ومن اتخذه والقاعدة والواقعة في N2 (1)، والتظلم بمهلته وقناة غير رقمية ومن يعيد النظر (1)، وناتج اختبار الفهم وإعادة الاختبار بعد التعديل (2).</p>
+    <p>الفخاخ: إشعار يذكر الذكاء الاصطناعي في كل جملة ولا يقول من قرر؛ وترجمة حرفية للعربية تفقد القناة غير الرقمية؛ وقراء يرون الإشعار أثناء الإجابة؛ وكتابة رقم هاتف «للتواصل»: ممنوع في المقرر. إن كانت القاعة صغيرة فليقرأ المدرب أو مساعده.</p>
+  </details>
+</article>
+<nav class="pager"><a href="D1_2_safeguards.html" rel="prev">→ المختبر السابق</a><a href="D2_1_launch.html" rel="next">المختبر التالي ←</a></nav>
+</main>
+<footer><div class="wrap">أكاديمية سدايا · مسار التنفيذيين والقادة · الذكاء الاصطناعي المسؤول بالتصميم لفرق المنتجات<br><span class="muted">إصدار المقرر 2027.1.0 · المحرّك 1.0.0 · بُني في ⁦2026-11-24⁩ · الإيداع 7db719c</span></div></footer>
+<script type="application/json" id="academy-data">{"v":1,"engine":"1.0.0","build":{"at":"2026-11-24T23:57:55Z","version":"2027.1.0","commit":"7db719c"},"course":{"id":"lds-prd-301","code":"LDS-PRD-301","title":"الذكاء الاصطناعي المسؤول بالتصميم لفرق المنتجات","track":"executives","lang":"ar","dir":"rtl","url":"https://sdaiaacademy.github.io/lds-prd-301/","repo":"SDAIAAcademy/lds-prd-301","home":"../index.html"},"lab":{"id":"1.3","title":"كتابة الإشعارات واختبار فهمها","summary":"تكتب ثلاثة إشعارات بالعربية والإنجليزية: إفصاح للمتقدم عند الطلب، وخطاب قرار «غير مستحق» بتفسيره وتظلمه، وإشعار للأخصائي داخل الأداة؛ ثم يقرؤها زملاء ويجيبون عن خمسة أسئلة ثابتة لكل إشعار، وتعيد الكتابة حتى يجيب كل قارئ عن أربعة على الأقل.","minutes":60,"day":1,"unit":"اليوم 1","session":3,"deck":"../slides/day1.html#lab-1-3","prev":"D1_2_safeguards.html","next":"D2_1_launch.html","alt":{}},"ai":{"context":{"course":"../context/course.md","courseJs":"../context/course.js","day":null,"llms":"../llms.txt"},"tasks":[],"tools":[]},"features":{},"strings":{}}</script>
+<script src="../_engine/academy.js"></script>
+</body>
+</html>

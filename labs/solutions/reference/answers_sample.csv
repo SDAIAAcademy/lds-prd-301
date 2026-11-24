@@ -1,0 +1,9 @@
+notice,lang,reader,q1,q2,q3,q4,q5
+N1,ar,P1,B,C,D,A,B
+N1,ar,P2,B,C,A,A,B
+N2,ar,P1,C,D,A,C,B
+N2,ar,P2,C,D,A,C,D
+N2,en,P3,C,D,A,A,B
+N2,en,P4,C,D,B,A,B
+N3,ar,P5,B,C,C,A,D
+N3,ar,P6,B,A,C,A,D

@@ -1,0 +1,2 @@
+id,harm,affected,affected_kind,category,impact,likelihood,reversibility,evidence
+E0,مثال: يتوقف المساعد يومًا فيتأخر إرسال الخطابات يومًا,المتقدمون في ذلك اليوم,user,failure,1,2,reversible,مثال للصيغة فقط؛ احذفه أو أبقه

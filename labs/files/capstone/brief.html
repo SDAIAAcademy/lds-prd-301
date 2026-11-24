@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>المشروع الختامي: حزمة مراجعة الإطلاق</title><style>body{font-family:"IBM Plex Sans Arabic","Segoe UI",Tahoma,sans-serif;max-width:52rem;margin:0 auto;padding:1rem;line-height:1.85;color:#1e2a36;background:#fbfaf7}
+.bar{font-size:.85rem;background:#eef2f4;border:1px solid #d5dde2;border-radius:.4rem;padding:.4rem .8rem}
+h1{font-size:1.4rem;line-height:1.5;margin:.8rem 0}h2{font-size:1.12rem;margin:1.4rem 0 .3rem}h3{font-size:1rem;margin:1rem 0 .2rem}
+.card{border:1px solid #cfd8dc;border-radius:.4rem;padding:.6rem .9rem;margin:.8rem 0;background:#fff}
+.note{border-inline-start:4px solid #c9a227;padding:.3rem .8rem;background:#fff8e1;margin:.8rem 0}
+.scroll{overflow-x:auto;max-width:100%}table{border-collapse:collapse;width:100%;font-size:.93rem}td,th{border:1px solid #cfd8dc;padding:.35rem .5rem;text-align:start;vertical-align:top}th{background:#eef2f4}
+.ltr{direction:ltr;unicode-bidi:isolate;display:inline-block;max-width:100%;overflow-wrap:anywhere}
+.en{direction:ltr;text-align:left;unicode-bidi:isolate}
+ol.q li{margin-bottom:.6rem}ol.opts{list-style:upper-latin;margin:.2rem 0}
+@media (max-width:560px){table{font-size:.82rem}td,th{padding:.25rem .3rem}}</style></head>
+<body>
+<div class="bar">ملف تدريبي · جمعية الرُّخامى الأهلية لرعاية الأسر جهة افتراضية، وكل بياناتها اصطناعية ومصنفة «عام» · المقرر <span class="ltr">LDS-PRD-301</span></div>
+<h1>المشروع الختامي: حزمة مراجعة الإطلاق</h1>
+
+<p>المشروع الختامي حزمة مراجعة إطلاق تدافع عنها أمام قائد منتج وأخصائي حوكمة. لك أحد طريقين:</p>
+<div class="card"><h3>الطريق الأول: التجربة الثانية في الحالة</h3>
+<p>أطلقت لجنة الجمعية النسخة 1.1 أربعة أسابيع إطلاقًا مشروطًا: تظهر المسودة لكل الطلبات، وعلى المستندات المصورة وبخط اليد وغير العربية علامة «تحقق من المستند»، مع مراجعة ثانية بالعينة. هذا ما قررته لجنة الحالة، وقد يختلف عما كتبته أنت في سجل إطلاقك. الملفات: <a href="pilot2_cases.csv">pilot2_cases.csv</a> (720 طلبًا، وعينة تدقيق 274 طلبًا) و<a href="pilot2_workload.csv">pilot2_workload.csv</a>. الأدوات نفسها: <code>slices.py</code> و<code>oversight_sim.py</code>. السؤال: هل تُوسَّع النسخة إلى كل الطلبات، أم يبقى الإطلاق مشروطًا، أم يُوقف؟</p></div>
+<div class="card"><h3>الطريق الثاني: ميزة من بيئتك</h3>
+<p>ميزة ذكاء اصطناعي عملت عليها، بعد إزالة المعرِّفات: لا اسم جهة، ولا اسم شخص، ولا رقم، ولا بيانات حقيقية، ولا وثيقة داخلية. تصف الأرقام بفئات تقريبية، وتكتب أين جاءت، وتستعمل قوالب الحزمة نفسها. أرفق قائمة إزالة المعرِّفات أدناه موقعة منك. لا يُرفع أي ملف حقيقي إلى أي أداة ذكاء اصطناعي.</p>
+<ul><li>لا اسم جهة أو منتج أو مورّد.</li><li>لا اسم شخص ولا وظيفة يُعرف بها شخص.</li><li>لا رقم هوية أو هاتف أو حساب أو طلب.</li><li>لا سطر منسوخ من وثيقة داخلية.</li><li>الأرقام فئات تقريبية أو مشتقة، ومصدرها مذكور بالوصف.</li></ul></div>
+<h2>ما في الحزمة</h2>
+<ol>
+<li>سجل الأضرار محدثًا، وفيه غير المستخدمين.</li>
+<li>قائمة أعمال الضوابط: كل ضرر من الخمسة الأعلى، وضابطه، واختباره، ونتيجته على أدلة التجربة الثانية.</li>
+<li>معايير الإطلاق للفئات الفرعية بحد أدنى للعدد، وقرار لكل شريحة لا يكفي عددها.</li>
+<li>الإشعارات الثلاثة بعد آخر اختبار فهم.</li>
+<li>مواصفات الإشراف معادًا ضبطها على عبء التجربة الثانية.</li>
+<li>سجل الإطلاق: القرار، والشروط بمالكيها ومواعيدها، ومحفزات التراجع، ومن اقترح ومن قرر ومن راجع.</li>
+</ol>
+<p>القالب: <a href="pack_template.md">pack_template.md</a>. التحضير 35 دقيقة بعد اليوم الثاني (دراسة ذاتية موجهة)، و20 دقيقة في بداية جلسة الدفاع. الذكاء الاصطناعي كامل في إعداد الحزمة، والدفاع دون مساعد. في الدفاع يضيف المقيِّم نتيجة فئة فرعية لم تكن في حزمتك، وتقول هل يتغير القرار.</p>
+
+</body>
+</html>

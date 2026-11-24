@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="ar" dir="rtl" data-ax="lab" data-track="executives">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>المختبر 2.1 · مواصفات الإشراف ومراجعة إطلاق بالمحاكاة · الذكاء الاصطناعي المسؤول بالتصميم لفرق المنتجات</title>
+<meta name="generator" content="SDAIA Academy engine 1.0.0">
+<link rel="icon" href="../_engine/icon.svg">
+<link rel="alternate" type="text/markdown" href="D2_1_launch.md">
+<link rel="describedby" href="../llms.txt">
+<link rel="stylesheet" href="../_engine/academy.css">
+</head>
+<body>
+<header>
+<div class="wrap">
+<div class="top"><div class="logo"></div><nav><a href="../index.html">صفحة المقرر</a><a href="../slides/day2.html#lab-2-1">العودة إلى الشرائح</a></nav></div>
+<span class="tag">المختبر 2.1</span>
+<h1>مواصفات الإشراف ومراجعة إطلاق بالمحاكاة</h1>
+<p>تكتب مواصفات الإشراف وتعيد تشغيلها على التجربة الأولى حتى تبلغ أهداف الجمعية ضمن طاقة المراجعين، ثم تعرض حزمة الأدلة أمام لجنة بالأدوار، وتكتب سجل الإطلاق بقراره وشروطه ومالكيها ومحفزات التراجع.</p>
+<div class="meta"><span>60 دقيقة</span><span>اليوم 2</span><span>الجلسة 1: الإشراف المقيس ومراجعة الإطلاق</span></div>
+</div>
+</header>
+<main class="wrap">
+<article class="lab" data-lab="2.1">
+  <div class="box goal">
+    <h3>ستخرج من هذا المختبر بـ</h3>
+    <p>مواصفات إشراف (<code>my_oversight.json</code>) فيها نسب العينة للمراجعة الثانية وعتبات تفعيل المراجعة وحقول السجل والأدوار، تبلغ أهداف الجمعية على التجربة الأولى ضمن طاقة المراجعين؛ ثم سجل إطلاق للنسخة 1.1 بقراره وشروطه ومالكيها ومحفزات التراجع، بعد مراجعة إطلاق بالأدوار. هذان دليلا الناتجين الرابع والخامس.</p>
+  </div>
+
+  <h2>ما تحتاجه</h2>
+  <div class="files">
+    <a href="files/d2_1/workload.csv" download><b>workload.csv</b><span>عبء عمل الأخصائيين الاثني عشر في ثمانية أسابيع: الطلبات، والزمن الوسيط، والاعتماد، والتغييرات وأسبابها الفارغة.</span></a>
+    <a href="files/pilot1/pilot1_cases.csv" download><b>pilot1_cases.csv</b><span>سجل التجربة الأولى، وفيه عينة التدقيق.</span></a>
+    <a href="files/d2_1/oversight_start.json" download><b>oversight_start.json</b><span>ملف البداية: عينة 2% عشوائية، ولا عتبات.</span></a>
+    <a href="files/tools/oversight_sim.py" download><b>oversight_sim.py</b><span>يعيد تشغيل المواصفات على التجربة ويقول أي هدف تحقق.</span></a>
+    <a href="files/d2_1/evidence_pack.html" target="_blank"><b>evidence_pack.html</b><span>حزمة الأدلة للجنة الإطلاق.</span></a>
+    <a href="files/d2_1/role_cards.html" target="_blank"><b>role_cards.html</b><span>بطاقات الأدوار الخمسة.</span></a>
+    <a href="files/d2_1/launch_record_template.md" download><b>launch_record_template.md</b><span>سجل الإطلاق الذي تكتبه.</span></a>
+  </div>
+  <div class="callout tip"><b>أهداف الجمعية (قواعدها للمقرر).</b> ساعات المراجعة الثانية ضمن الطاقة كل أسبوع (مشرفان، 10 ساعات معًا)؛ وأن تصل المراجعة الثانية إلى نصف القرارات الخاطئة على الأقل؛ وأن تُعلَّم كل أسابيع الأخصائي التي لا تغيير فيها وزمنها الوسيط تحت 60 ثانية، بإنذارات خاطئة لا تتجاوز 10% من غيرها؛ وحقول السجل كاملة؛ وثلاثة أدوار مختلفة لمن يقرر ومن يراجع ومن ينظر في التظلم. التشغيل: <code>uv run oversight_sim.py my_oversight.json ../pilot1/pilot1_cases.csv ../d2_1/workload.csv</code>.</div>
+
+  <h2>الخطوات</h2>
+  <div class="step">
+    <h3>1 · اقرأ عبء العمل وسجل التجاوز، وشغّل المحاكاة على ملف البداية <span class="min">8 د</span></h3>
+    <p>انسخ ملف البداية باسم <code>my_oversight.json</code> وشغّله. عينة 2% في الطاقة بسهولة: كم من القرارات الخاطئة تصل إليها؟ ثم افتح <code>workload.csv</code>: أي أخصائي لم يغير شيئًا، وكم كان زمنه؟</p>
+  </div>
+  <div class="step">
+    <h3>2 · حدد شرائح العينة ونسبها وعتبات التفعيل ضمن الطاقة <span class="min">12 د</span></h3>
+    <p>في <code>strata</code>: أين تقع القرارات الخاطئة (المسودة، وشكل المستند، ولغته)، وبأي نسبة تراجعها. في <code>triggers</code>: عتبة الموافقة الشكلية (<code>rubber_stamp</code>) وعتبة الأسباب الفارغة (<code>blank_reasons</code>)، ولكل منها <code>action</code>: ماذا يحدث حين تُفعَّل.</p>
+  </div>
+  <div class="step">
+    <h3>3 · أكمل حقول السجل والأدوار، وأعد التشغيل حتى تبلغ الأهداف <span class="min">5 د</span></h3>
+    <p>اكتب في <code>log_fields</code> ما يلزم لتعرف لاحقًا من قرر وبأي مسودة وبأي نسخة ولماذا، وفي <code>roles</code> ثلاثة أدوار مختلفة. أعد التشغيل حتى تقرأ PASS في الأهداف الخمسة.</p>
+  </div>
+  <div class="step">
+    <h3>4 · مراجعة الإطلاق بالأدوار: العرض، وأسئلة اللجنة، والقرار <span class="min">25 د</span></h3>
+    <p>في مجموعات من خمسة، ببطاقات الأدوار: يعرض قائد المنتج حزمة الأدلة ومواصفات الإشراف في خمس دقائق ويقترح قرارًا؛ تسأل اللجنة اثنتي عشرة دقيقة؛ ثم تقرر في ثمانٍ: إطلاق، أو إطلاق مشروط، أو عدم إطلاق. من اقترح لا يصوت.</p>
+  </div>
+  <div class="step">
+    <h3>5 · اكتب سجل الإطلاق: القرار والشروط ومالكوها ومحفزات التراجع <span class="min">10 د</span></h3>
+    <p>كل مشارك يكتب سجله بنفسه في <code>launch_record_template.md</code>، حتى لو اختلف مع قرار مجموعته: لكل شرط مالك وموعد ودليل يغلقه، ولكل محفز رقم وعتبة ومدة ومن يقرر. اكتب الرأي المخالف إن وُجد. سلّم الملفين وناتج المحاكاة.</p>
+  </div>
+  <div class="step stretch">
+    <h3>✱ إضافي</h3>
+    <p>تريد الجمعية أن تخفض العينة إلى النصف بعد شهرين بلا مشكلات: ما الدليل الذي يسمح بذلك، ومن يقرره؟</p>
+  </div>
+
+  <h2>أسئلة تحقق</h2>
+  <ol class="checks">
+    <li>لماذا لا تكفي نسبة اعتماد المسودات وحدها لتعرف أن الإشراف يعمل؟</li>
+    <li>عتبة تُفعَّل على ربع أسابيع الأخصائيين: ماذا يحدث للعتبة وللمشرفين بعد شهر؟</li>
+    <li>شرط بلا مالك أو بلا موعد: ماذا يصير بعد الإطلاق؟</li>
+  </ol>
+
+  <details class="instructor">
+    <summary>للمدرّب</summary>
+    <p>ملف البداية: الطاقة اجتياز (0.5 ساعة في الأسبوع)، والوصول 1.8% فقط، ولا عتبات، والحقول والأدوار ناقصة. المرجع <code>solutions/reference/oversight_reference.json</code>: كل مسودة «غير مستحق» أو «ناقص» على مستند بخط اليد أو مصور أو بغير العربية تُراجع، و25% من بقية هذه المسودات، و2% من الباقي؛ أعلى أسبوع 9.8 ساعة من 10؛ والوصول 63.3%؛ والعتبتان تعلّمان أسابيع CW04 وCW09 الستة عشر كلها مع 5 إنذارات خاطئة من 80 (6.2%). ليس الحل الوحيد: كل ملف يبلغ الأهداف الخمسة ويبرر شرائحه مقبول.</p>
+    <p>سجل الإطلاق المرجعي في <code>launch_record_reference.md</code>: إطلاق مشروط، والمستندات المصورة وغير العربية تُدرس دون مسودة، وإصلاح الخطاب الإنجليزي قبل الإطلاق، ومحفزات بأرقام. عدم الإطلاق مقبول إن دُوفع عنه بالأرقام؛ الإطلاق الكامل كما اقترحه قائد المنتج لا تسنده الحزمة.</p>
+    <p>التقدير (6 من 25): الأهداف الخمسة في المحاكاة وتبرير الشرائح (2)، ولكل عتبة إجراء لا يعاقب الأخصائي على أن يُعلَّم (1)، وسجل إطلاق بقرار وشروط لكل منها مالك وموعد ودليل (2)، ومحفزات تراجع برقم وعتبة ومدة ومن يقرر، وفصل المهام (1).</p>
+    <p>الفخاخ: رفع العينة كلها إلى 40% فتتجاوز الطاقة في كل الأسابيع؛ وعتبة زمن وحده دون الاعتماد فتعلّم أسابيع الأسبوع الثامن كلها؛ وجعل المشرف يراجع قراراته؛ وشروط «يُحسَّن لاحقًا» بلا مالك. وفي مجموعات أقل من خمسة يؤدي المدرب دور ممثل المتقدمين.</p>
+  </details>
+</article>
+<nav class="pager"><a href="D1_3_notices.html" rel="prev">→ المختبر السابق</a></nav>
+</main>
+<footer><div class="wrap">أكاديمية سدايا · مسار التنفيذيين والقادة · الذكاء الاصطناعي المسؤول بالتصميم لفرق المنتجات<br><span class="muted">إصدار المقرر 2027.1.0 · المحرّك 1.0.0 · بُني في ⁦2026-11-24⁩ · الإيداع 7db719c</span></div></footer>
+<script type="application/json" id="academy-data">{"v":1,"engine":"1.0.0","build":{"at":"2026-11-24T23:57:55Z","version":"2027.1.0","commit":"7db719c"},"course":{"id":"lds-prd-301","code":"LDS-PRD-301","title":"الذكاء الاصطناعي المسؤول بالتصميم لفرق المنتجات","track":"executives","lang":"ar","dir":"rtl","url":"https://sdaiaacademy.github.io/lds-prd-301/","repo":"SDAIAAcademy/lds-prd-301","home":"../index.html"},"lab":{"id":"2.1","title":"مواصفات الإشراف ومراجعة إطلاق بالمحاكاة","summary":"تكتب مواصفات الإشراف وتعيد تشغيلها على التجربة الأولى حتى تبلغ أهداف الجمعية ضمن طاقة المراجعين، ثم تعرض حزمة الأدلة أمام لجنة بالأدوار، وتكتب سجل الإطلاق بقراره وشروطه ومالكيها ومحفزات التراجع.","minutes":60,"day":2,"unit":"اليوم 2","session":1,"deck":"../slides/day2.html#lab-2-1","prev":"D1_3_notices.html","next":null,"alt":{}},"ai":{"context":{"course":"../context/course.md","courseJs":"../context/course.js","day":null,"llms":"../llms.txt"},"tasks":[],"tools":[]},"features":{},"strings":{}}</script>
+<script src="../_engine/academy.js"></script>
+</body>
+</html>

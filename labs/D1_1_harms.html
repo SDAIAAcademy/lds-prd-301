@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="ar" dir="rtl" data-ax="lab" data-track="executives">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>المختبر 1.1 · بناء سجل الأضرار · الذكاء الاصطناعي المسؤول بالتصميم لفرق المنتجات</title>
+<meta name="generator" content="SDAIA Academy engine 1.0.0">
+<link rel="icon" href="../_engine/icon.svg">
+<link rel="alternate" type="text/markdown" href="D1_1_harms.md">
+<link rel="describedby" href="../llms.txt">
+<link rel="stylesheet" href="../_engine/academy.css">
+</head>
+<body>
+<header>
+<div class="wrap">
+<div class="top"><div class="logo"></div><nav><a href="../index.html">صفحة المقرر</a><a href="../slides/day1.html#lab-1-1">العودة إلى الشرائح</a></nav></div>
+<span class="tag">المختبر 1.1</span>
+<h1>بناء سجل الأضرار</h1>
+<p>تبني سجل أضرار مساعد مسودات الأهلية: قائمة أولى دون ذكاء اصطناعي، ثم مساعد مرشد يتحداك في الفئات الغائبة، ثم ترتيب بالأثر والاحتمالية وقابلية التراجع من أدلة التجربة الأولى، حتى تصل إلى الأضرار الخمسة الأعلى.</p>
+<div class="meta"><span>60 دقيقة</span><span>اليوم 1</span><span>الجلسة 1: الأضرار عبر الفئات، وفيها من لا يستخدم المنتج</span></div>
+</div>
+</header>
+<main class="wrap">
+<article class="lab" data-lab="1.1">
+  <div class="box goal">
+    <h3>ستخرج من هذا المختبر بـ</h3>
+    <p>سجل أضرار مرتب لمساعد صياغة مسودات الأهلية: عشرة أضرار على الأقل في الفئات الأربع، منها ضرران على الأقل يصيبان من لا يستخدم المساعد، لكل منها أثر واحتمالية وقابلية للتراجع ودليل، والأضرار الخمسة الأعلى. هذا دليل الناتج الأول.</p>
+  </div>
+
+  <h2>ما تحتاجه</h2>
+  <div class="files">
+    <a href="files/case_brief.html" target="_blank"><b>case_brief.html</b><span>الجمعية وقواعدها، ومواصفات المساعد، والأدوار، وشخصيات المتقدمين.</span></a>
+    <a href="files/d1_1/pilot1_report.html" target="_blank"><b>pilot1_report.html</b><span>تقرير التجربة الأولى كما عرضه فريق المنتج، وشرح الأعمدة.</span></a>
+    <a href="files/pilot1/pilot1_cases.csv" download><b>pilot1_cases.csv</b><span>1,440 طلبًا في التجربة الأولى، وفيها عينة التدقيق.</span></a>
+    <a href="files/d1_1/bias_reference.html" target="_blank"><b>bias_reference.html</b><span>عشرة أنواع من الدليل المرجعي للتحيز، قائمةً للفحص.</span></a>
+    <a href="files/d1_1/risk_matrix.html" target="_blank"><b>risk_matrix.html</b><span>الأثر والاحتمالية ومستوى الخطر في الإطار الوطني، وقاعدة المقرر لقابلية التراجع.</span></a>
+    <a href="files/d1_1/register_start.csv" download><b>register_start.csv</b><span>ملف البداية: الأعمدة وسطر مثال.</span></a>
+    <a href="files/tools/rank_harms.py" download><b>rank_harms.py</b><span>يرتّب السجل ويقول ما ينقصه.</span></a>
+    <a href="files/tools/slices.py" download><b>slices.py</b><span>نتائج الفئات الفرعية من عينة التدقيق.</span></a>
+  </div>
+  <div class="callout tip"><b>كيف تشغّل البرنامجين.</b> في مجلد <code>files/tools</code>: <code>uv run rank_harms.py my_register.csv</code> و<code>uv run slices.py ../pilot1/pilot1_cases.csv</code>، أو <code>python</code> بدل <code>uv run</code> إن كانت بايثون 3.10 أو أحدث مثبتة، أو <code>%run</code> في خدمة دفاتر مستضافة مجانية بعد رفع الملفات. لا مكتبات ولا اتصال. ومن يفضل جدول البيانات يبني الشرائح بجدول محوري من الأعمدة نفسها.</div>
+
+  <h2>الخطوات</h2>
+  <div class="step">
+    <h3>1 · اقرأ الحالة والمواصفات والشخصيات وتقرير التجربة الأولى <span class="min">8 د</span></h3>
+    <p>اقرأ المواصفات كما يقرؤها من سيُسأل عن الضرر: ماذا يفعل المساعد، ومن يرى ما يكتبه، ومن لا يراه أبدًا.</p>
+  </div>
+  <div class="step">
+    <h3>2 · اكتب قائمتك الأولى للأضرار دون أي ذكاء اصطناعي <span class="min">15 د</span></h3>
+    <p>انسخ <code>register_start.csv</code> باسم <code>my_register.csv</code>. اكتب كل ضرر في جملة: من يصيبه، وماذا يحدث له، وبسبب ماذا. مرّ على الشخصيات A1 إلى A6 واحدة واحدة، ثم على الفئات: إخفاق، وسوء استخدام، وتوسع، وتحيز. هذه الخطوة دون مساعد ودون زملاء.</p>
+  </div>
+  <div class="step">
+    <h3>3 · اطلب من المساعد المرشد أن يتحداك في الفئات الغائبة، وأضف غير المستخدمين <span class="min">10 د</span></h3>
+    <p>الصق قائمتك (هي ملف تدريبي مصنف «عام») في مساعد محادثة مع هذا الأمر. المساعد يسأل ولا يكتب عنك.</p>
+    <div class="prompt" data-tool="مساعد محادثة">أنت مرشد في ورشة عن الأضرار. هذه قائمة أضرار لمساعد يصوغ مسودات قرارات الأهلية لإعانة شهرية، والأخصائي الاجتماعي يقرر. لا تكتب أضرارًا جديدة ولا تصحح القائمة. اسألني فقط، سؤالًا واحدًا في كل مرة، عن: من يتأثر ولم أذكره، وخاصة من لا يستخدم المساعد ولا يراه؛ والفئة التي غابت من الأربع (إخفاق، سوء استخدام، توسع، تحيز). القائمة: <span class="ph">الصق قائمتك هنا</span></div>
+    <p>أضف ما اقتنعت به، وعلّم <code>affected_kind</code> بـ<code>non_user</code> لمن لا يستخدم المساعد.</p>
+  </div>
+  <div class="step">
+    <h3>4 · قدّر الأثر والاحتمالية وقابلية التراجع، ورتّب السجل بالبرنامج <span class="min">17 د</span></h3>
+    <p>شغّل <code>slices.py</code> على التجربة الأولى، واقرأ أي الشرائح تتجاوز العتبة. لكل ضرر: الأثر من 1 إلى 4 بتعريفات الإطار الوطني، والاحتمالية من 1 إلى 4 من الدليل لا من الانطباع، وقابلية التراجع، وفي <code>evidence</code> الرقم أو السبب. ثم <code>uv run rank_harms.py my_register.csv --out ranked.csv</code>، وأصلح ما يقول البرنامج إنه ناقص.</p>
+  </div>
+  <div class="step">
+    <h3>5 · اختر الأضرار الخمسة الأعلى، وقارنها بترتيب زميل <span class="min">10 د</span></h3>
+    <p>اقرأ أضرارك الخمسة الأعلى مع زميل. حيث اختلفتما، ما الرقم أو الافتراض الذي فرّق بينكما؟ سلّم <code>my_register.csv</code> و<code>ranked.csv</code>.</p>
+  </div>
+  <div class="step stretch">
+    <h3>✱ إضافي</h3>
+    <p>بعد سنة تريد الجمعية أن يقرر المساعد وحده في الطلبات التي دخلها أقل من نصف الحد: ما الأضرار التي يتغير ترتيبها، ولماذا؟</p>
+  </div>
+
+  <h2>أسئلة تحقق</h2>
+  <ol class="checks">
+    <li>نسبة الاعتماد دون تعديل عالية: لماذا لا تخفض احتمالية أي ضرر في سجلك؟</li>
+    <li>ضرر أثره مرتفع واحتماليته نادرة، وآخر أثره متوسط واحتماليته شبه مؤكدة: أيهما أعلى في المصفوفة، وأين تدخل قابلية التراجع؟</li>
+    <li>من في سجلك لا يستخدم المساعد، وكيف عرفت أنه يتأثر؟</li>
+  </ol>
+
+  <details class="instructor">
+    <summary>للمدرّب</summary>
+    <p>السجل المرجعي في <code>solutions/reference/register_reference.csv</code>: أربعة عشر ضررًا، ثلاثة منها لغير المستخدمين (H06 أسر لا تتقدم، وH07 صاحب الطلب الغائب حين يقدم قريب، وH13 المتبرعون)، والفئات الأربع كلها. الخمسة الأعلى: H01 وH03 وH04 (مستوى 12، مرتفع) ثم H02 وH05 (مستوى 8، مرتفع). ليس الترتيب الوحيد المقبول: كل ترتيب يبرر الاحتمالية برقم من التدقيق مقبول.</p>
+    <p>أرقام <code>slices.py</code> على التجربة الأولى (عينة 392): «غير مستحق» خطأً في المسودات 6/50 = 12.0% في المصورة، و5/60 = 8.3% بخط اليد، و0/123 في المطبوعة؛ و5/62 = 8.1% لمن هم 60 فأكثر؛ و«ناقص» خطأً 3/30 = 10.0% بالإنجليزية و4/29 = 13.8% في المختلطة. في العينة 15 قرار حرمان خاطئ موقّع، تُظلم من 3 فقط.</p>
+    <p>التقدير (7 من 25): عشرة أضرار على الأقل في الفئات الأربع (2)، وضرران على الأقل لغير المستخدمين بتأثير مشروح (2)، واحتمالية مبررة برقم من التدقيق للأضرار الخمسة الأعلى (2)، وقابلية التراجع مكتوبة ومستعملة في الترتيب (1).</p>
+    <p>الفخاخ: قراءة اعتماد 96.2% دليلًا على الجودة؛ وجعل «كبار السن» ضررًا مستقلًا والسبب شكل المستند (العمر هنا وكيل)؛ ونسيان أن من رُفض خطأً لا يظهر في التظلمات؛ وأثر 4 لكل حرمان: الإعانة تُصرف بأثر رجعي إن قُبل التظلم، فالأثر مرتفع لا كارثي، إلا إن دافع المشارك عن الحرمان الفعلي من خدمة حيوية لا يُعوَّض بسهولة.</p>
+  </details>
+</article>
+<nav class="pager"><span></span><a href="D1_2_safeguards.html" rel="next">المختبر التالي ←</a></nav>
+</main>
+<footer><div class="wrap">أكاديمية سدايا · مسار التنفيذيين والقادة · الذكاء الاصطناعي المسؤول بالتصميم لفرق المنتجات<br><span class="muted">إصدار المقرر 2027.1.0 · المحرّك 1.0.0 · بُني في ⁦2026-11-24⁩ · الإيداع 7db719c</span></div></footer>
+<script type="application/json" id="academy-data">{"v":1,"engine":"1.0.0","build":{"at":"2026-11-24T23:57:55Z","version":"2027.1.0","commit":"7db719c"},"course":{"id":"lds-prd-301","code":"LDS-PRD-301","title":"الذكاء الاصطناعي المسؤول بالتصميم لفرق المنتجات","track":"executives","lang":"ar","dir":"rtl","url":"https://sdaiaacademy.github.io/lds-prd-301/","repo":"SDAIAAcademy/lds-prd-301","home":"../index.html"},"lab":{"id":"1.1","title":"بناء سجل الأضرار","summary":"تبني سجل أضرار مساعد مسودات الأهلية: قائمة أولى دون ذكاء اصطناعي، ثم مساعد مرشد يتحداك في الفئات الغائبة، ثم ترتيب بالأثر والاحتمالية وقابلية التراجع من أدلة التجربة الأولى، حتى تصل إلى الأضرار الخمسة الأعلى.","minutes":60,"day":1,"unit":"اليوم 1","session":1,"deck":"../slides/day1.html#lab-1-1","prev":null,"next":"D1_2_safeguards.html","alt":{}},"ai":{"context":{"course":"../context/course.md","courseJs":"../context/course.js","day":null,"llms":"../llms.txt"},"tasks":[],"tools":[]},"features":{},"strings":{}}</script>
+<script src="../_engine/academy.js"></script>
+</body>
+</html>
