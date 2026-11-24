@@ -5,7 +5,7 @@
 
     uv run score_comprehension.py ../d1_3/answers_start.csv ../d1_3/comprehension_key.json
 
-answers CSV columns: notice (N1 or N2), lang (ar or en), reader (a code, never a name), q1 to q5
+answers CSV columns: notice (N1, N2 or N3), lang (ar or en), reader (a code, never a name), q1 to q5
 (the letter each reader chose: A, B, C or D). The key file holds the right letter of each
 question for each notice. The course's rule: a notice passes in a language when at least two
 peers read it and every one of them answers at least four of the five questions correctly.
